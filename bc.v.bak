@@ -1,0 +1,7 @@
+module bc
+(input[2:0] KEY,
+output[9:0] LEDR);
+
+bc comandBlock(.clock(KEY[0]), .start(KEY[1]), .reset(KEY[2]), .LX(LEDR[0]), .LS(LEDR[1]), .LH(LEDR[2]), .H(LEDR[3]), .M0(LEDR[5:4]), .M1(LEDR[7:6]), .M2(LEDR[9:8]));
+
+endmodule

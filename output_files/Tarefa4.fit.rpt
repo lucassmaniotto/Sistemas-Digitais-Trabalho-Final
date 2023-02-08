@@ -1,5 +1,5 @@
 Fitter report for Tarefa4
-Tue Jan 31 21:53:29 2023
+Tue Feb 07 21:45:53 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -66,17 +66,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Tue Jan 31 21:53:29 2023      ;
+; Fitter Status                      ; Successful - Tue Feb 07 21:45:53 2023      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; Tarefa4                                    ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 250 / 18,752 ( 1 % )                       ;
-;     Total combinational functions  ; 246 / 18,752 ( 1 % )                       ;
-;     Dedicated logic registers      ; 50 / 18,752 ( < 1 % )                      ;
-; Total registers                    ; 50                                         ;
+; Total logic elements               ; 276 / 18,752 ( 1 % )                       ;
+;     Total combinational functions  ; 271 / 18,752 ( 1 % )                       ;
+;     Dedicated logic registers      ; 54 / 18,752 ( < 1 % )                      ;
+; Total registers                    ; 54                                         ;
 ; Total pins                         ; 52 / 315 ( 17 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                        ;
@@ -501,8 +501,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 353 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 353 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 382 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 382 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -525,7 +525,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 350     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 379     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -533,7 +533,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e 2121101043 (1)/Tarefa 4/output_files/Tarefa4.pin.
+The pin-out file can be found in C:/Users/aluno/Downloads/SistemasDigitais-main/SistemasDigitais-main/output_files/Tarefa4.pin.
 
 
 +---------------------------------------------------------------------+
@@ -541,26 +541,26 @@ The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 250 / 18,752 ( 1 % )  ;
-;     -- Combinational with no register       ; 200                   ;
-;     -- Register only                        ; 4                     ;
-;     -- Combinational with a register        ; 46                    ;
+; Total logic elements                        ; 276 / 18,752 ( 1 % )  ;
+;     -- Combinational with no register       ; 222                   ;
+;     -- Register only                        ; 5                     ;
+;     -- Combinational with a register        ; 49                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 54                    ;
-;     -- 3 input functions                    ; 78                    ;
-;     -- <=2 input functions                  ; 114                   ;
-;     -- Register only                        ; 4                     ;
+;     -- 4 input functions                    ; 78                    ;
+;     -- 3 input functions                    ; 80                    ;
+;     -- <=2 input functions                  ; 113                   ;
+;     -- Register only                        ; 5                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 178                   ;
+;     -- normal mode                          ; 203                   ;
 ;     -- arithmetic mode                      ; 68                    ;
 ;                                             ;                       ;
-; Total registers*                            ; 50 / 19,649 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 50 / 18,752 ( < 1 % ) ;
+; Total registers*                            ; 54 / 19,649 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 54 / 18,752 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 897 ( 0 % )       ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 20 / 1,172 ( 2 % )    ;
+; Total LABs:  partially or completely used   ; 25 / 1,172 ( 2 % )    ;
 ; Virtual pins                                ; 0                     ;
 ; I/O pins                                    ; 52 / 315 ( 17 % )     ;
 ;     -- Clock pins                           ; 6 / 8 ( 75 % )        ;
@@ -576,11 +576,11 @@ The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
-; Peak interconnect usage (total/H/V)         ; 1% / 2% / 0%          ;
-; Maximum fan-out                             ; 50                    ;
-; Highest non-global fan-out                  ; 50                    ;
-; Total fan-out                               ; 855                   ;
-; Average fan-out                             ; 2.40                  ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 1%          ;
+; Maximum fan-out                             ; 54                    ;
+; Highest non-global fan-out                  ; 54                    ;
+; Total fan-out                               ; 968                   ;
+; Average fan-out                             ; 2.51                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -593,25 +593,25 @@ The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 250 / 18752 ( 1 % )  ; 0 / 18752 ( 0 % )              ;
-;     -- Combinational with no register       ; 200                  ; 0                              ;
-;     -- Register only                        ; 4                    ; 0                              ;
-;     -- Combinational with a register        ; 46                   ; 0                              ;
+; Total logic elements                        ; 276 / 18752 ( 1 % )  ; 0 / 18752 ( 0 % )              ;
+;     -- Combinational with no register       ; 222                  ; 0                              ;
+;     -- Register only                        ; 5                    ; 0                              ;
+;     -- Combinational with a register        ; 49                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 54                   ; 0                              ;
-;     -- 3 input functions                    ; 78                   ; 0                              ;
-;     -- <=2 input functions                  ; 114                  ; 0                              ;
-;     -- Register only                        ; 4                    ; 0                              ;
+;     -- 4 input functions                    ; 78                   ; 0                              ;
+;     -- 3 input functions                    ; 80                   ; 0                              ;
+;     -- <=2 input functions                  ; 113                  ; 0                              ;
+;     -- Register only                        ; 5                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 178                  ; 0                              ;
+;     -- normal mode                          ; 203                  ; 0                              ;
 ;     -- arithmetic mode                      ; 68                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 50                   ; 0                              ;
-;     -- Dedicated logic registers            ; 50 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
+; Total registers                             ; 54                   ; 0                              ;
+;     -- Dedicated logic registers            ; 54 / 18752 ( < 1 % ) ; 0 / 18752 ( 0 % )              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 20 / 1172 ( 2 % )    ; 0 / 1172 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 25 / 1172 ( 2 % )    ; 0 / 1172 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 52                   ; 0                              ;
@@ -626,8 +626,8 @@ The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 891                  ; 0                              ;
-;     -- Registered Connections               ; 224                  ; 0                              ;
+;     -- Total Connections                    ; 1004                 ; 0                              ;
+;     -- Registered Connections               ; 270                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -659,20 +659,20 @@ The pin-out file can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; KEY[0] ; R22   ; 6        ; 50           ; 10           ; 1           ; 50                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; KEY[0] ; R22   ; 6        ; 50           ; 10           ; 1           ; 54                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; KEY[1] ; R21   ; 6        ; 50           ; 10           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; KEY[2] ; T22   ; 6        ; 50           ; 9            ; 0           ; 15                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; KEY[2] ; T22   ; 6        ; 50           ; 9            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; KEY[3] ; T21   ; 6        ; 50           ; 9            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[0]  ; L22   ; 5        ; 50           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[1]  ; L21   ; 5        ; 50           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[2]  ; M22   ; 6        ; 50           ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[3]  ; V12   ; 7        ; 26           ; 0            ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[3]  ; V12   ; 7        ; 26           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[4]  ; W12   ; 7        ; 26           ; 0            ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[5]  ; U12   ; 8        ; 26           ; 0            ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[6]  ; U11   ; 8        ; 26           ; 0            ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[7]  ; M2    ; 1        ; 0            ; 13           ; 3           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[8]  ; M1    ; 1        ; 0            ; 13           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[9]  ; L2    ; 2        ; 0            ; 13           ; 1           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[9]  ; L2    ; 2        ; 0            ; 13           ; 1           ; 19                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +--------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -1273,9 +1273,9 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                                ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main                                        ; 250 (0)     ; 50 (0)                    ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 52   ; 0            ; 200 (0)      ; 4 (0)             ; 46 (1)           ; |main                                                                                                                              ;              ;
-;    |bc:comandBlock|                          ; 15 (15)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 14 (14)          ; |main|bc:comandBlock                                                                                                               ;              ;
-;    |bo:operatorBlock|                        ; 236 (33)    ; 35 (35)                   ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 200 (0)      ; 3 (3)             ; 33 (1)           ; |main|bo:operatorBlock                                                                                                             ;              ;
+; |main                                        ; 276 (1)     ; 54 (0)                    ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 52   ; 0            ; 222 (1)      ; 5 (0)             ; 49 (0)           ; |main                                                                                                                              ;              ;
+;    |bc:comandBlock|                          ; 31 (31)     ; 18 (18)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 5 (5)             ; 13 (13)          ; |main|bc:comandBlock                                                                                                               ;              ;
+;    |bo:operatorBlock|                        ; 250 (36)    ; 36 (36)                   ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 208 (1)      ; 0 (0)             ; 42 (16)          ; |main|bo:operatorBlock                                                                                                             ;              ;
 ;       |display:dis|                          ; 163 (32)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 163 (32)     ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis                                                                                                 ;              ;
 ;          |lpm_divide:Div0|                   ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis|lpm_divide:Div0                                                                                 ;              ;
 ;             |lpm_divide_aem:auto_generated|  ; 82 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 82 (0)       ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated                                                   ;              ;
@@ -1289,10 +1289,10 @@ Note: User assignments will override these defaults. The user specified values a
 ;             |lpm_divide_gem:auto_generated|  ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis|lpm_divide:Div2|lpm_divide_gem:auto_generated                                                   ;              ;
 ;                |sign_div_unsign_qlh:divider| ; 5 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis|lpm_divide:Div2|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider                       ;              ;
 ;                   |alt_u_div_m2f:divider|    ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|display:dis|lpm_divide:Div2|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider ;              ;
-;       |mux:M0|                               ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|mux:M0                                                                                                      ;              ;
-;       |mux:M1|                               ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 8 (8)            ; |main|bo:operatorBlock|mux:M1                                                                                                      ;              ;
-;       |mux:M2|                               ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 11 (11)          ; |main|bo:operatorBlock|mux:M2                                                                                                      ;              ;
-;       |somador:sum|                          ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 13 (13)          ; |main|bo:operatorBlock|somador:sum                                                                                                 ;              ;
+;       |mux:M0|                               ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |main|bo:operatorBlock|mux:M0                                                                                                      ;              ;
+;       |mux:M1|                               ; 20 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 18 (18)      ; 0 (0)             ; 2 (2)            ; |main|bo:operatorBlock|mux:M1                                                                                                      ;              ;
+;       |mux:M2|                               ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 7 (7)            ; |main|bo:operatorBlock|mux:M2                                                                                                      ;              ;
+;       |somador:sum|                          ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 16 (16)          ; |main|bo:operatorBlock|somador:sum                                                                                                 ;              ;
 ;          |lpm_mult:Mult0|                    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|somador:sum|lpm_mult:Mult0                                                                                  ;              ;
 ;             |mult_l8t:auto_generated|        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 2            ; 0       ; 1         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |main|bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated                                                          ;              ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -1305,14 +1305,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name    ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ;
 +---------+----------+---------------+---------------+-----------------------+-----+
 ; KEY[1]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; KEY[2]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; KEY[3]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; SW[3]   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; SW[4]   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; SW[5]   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; SW[6]   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; SW[7]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; SW[8]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; SW[9]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; LEDR[0] ; Output   ; --            ; --            ; --                    ; --  ;
 ; LEDR[1] ; Output   ; --            ; --            ; --                    ; --  ;
 ; LEDR[2] ; Output   ; --            ; --            ; --                    ; --  ;
@@ -1353,7 +1352,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX3[6] ; Output   ; --            ; --            ; --                    ; --  ;
 ; KEY[0]  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; SW[0]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; KEY[2]  ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; SW[9]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
+; SW[3]   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
 ; SW[2]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; SW[1]   ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +---------+----------+---------------+---------------+-----------------------+-----+
@@ -1365,98 +1365,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout              ; Pad To Core Index ; Setting ;
 +----------------------------------+-------------------+---------+
 ; KEY[1]                           ;                   ;         ;
+; KEY[2]                           ;                   ;         ;
 ; KEY[3]                           ;                   ;         ;
-; SW[3]                            ;                   ;         ;
 ; SW[4]                            ;                   ;         ;
 ; SW[5]                            ;                   ;         ;
 ; SW[6]                            ;                   ;         ;
 ; SW[7]                            ;                   ;         ;
 ; SW[8]                            ;                   ;         ;
-; SW[9]                            ;                   ;         ;
 ; KEY[0]                           ;                   ;         ;
-;      - bc:comandBlock|M2[1]      ; 1                 ; 0       ;
-;      - bc:comandBlock|M1[0]      ; 1                 ; 0       ;
-;      - bc:comandBlock|M1[1]      ; 1                 ; 0       ;
-;      - bc:comandBlock|M0[0]      ; 1                 ; 0       ;
-;      - bc:comandBlock|M0[1]      ; 1                 ; 0       ;
-;      - bc:comandBlock|H          ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[0]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[0]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[1]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[2]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[3]  ; 1                 ; 0       ;
+;      - bc:comandBlock|M2[1]      ; 0                 ; 0       ;
+;      - bc:comandBlock|M1[0]      ; 0                 ; 0       ;
+;      - bc:comandBlock|M1[1]      ; 0                 ; 0       ;
+;      - bc:comandBlock|M0[0]      ; 0                 ; 0       ;
+;      - bc:comandBlock|M0[1]      ; 0                 ; 0       ;
+;      - bc:comandBlock|H          ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[0]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[0]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[1]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[2]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[3]  ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[4]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[5]  ; 1                 ; 0       ;
+;      - bo:operatorBlock|regS[5]  ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[6]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[7]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[8]  ; 1                 ; 0       ;
+;      - bo:operatorBlock|regS[7]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[8]  ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[9]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regX[0]  ; 1                 ; 0       ;
-;      - bc:comandBlock|LS         ; 1                 ; 0       ;
+;      - bo:operatorBlock|regX[0]  ; 0                 ; 0       ;
+;      - bc:comandBlock|flag       ; 1                 ; 0       ;
+;      - bc:comandBlock|state.0001 ; 0                 ; 0       ;
+;      - bc:comandBlock|LS         ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regH[9]  ; 1                 ; 0       ;
 ;      - bo:operatorBlock|regH[8]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[7]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[6]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[5]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[4]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[3]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[2]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regX[2]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regX[1]  ; 1                 ; 0       ;
-;      - bo:operatorBlock|regH[1]  ; 1                 ; 0       ;
+;      - bo:operatorBlock|regH[7]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[6]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[5]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[4]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[3]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regX[3]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[2]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regX[2]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regX[1]  ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[1]  ; 0                 ; 0       ;
 ;      - bc:comandBlock|LX         ; 0                 ; 0       ;
-;      - bc:comandBlock|state.0101 ; 0                 ; 0       ;
 ;      - bc:comandBlock|state.0010 ; 0                 ; 0       ;
-;      - bc:comandBlock|state.0110 ; 0                 ; 0       ;
+;      - bc:comandBlock|state.0101 ; 0                 ; 0       ;
+;      - bc:comandBlock|state.0000 ; 0                 ; 0       ;
 ;      - bc:comandBlock|state.0011 ; 0                 ; 0       ;
-;      - bc:comandBlock|state.0001 ; 0                 ; 0       ;
-;      - bc:comandBlock|LH         ; 1                 ; 0       ;
+;      - bc:comandBlock|state.0111 ; 0                 ; 0       ;
+;      - bc:comandBlock|state.0110 ; 1                 ; 0       ;
 ;      - bc:comandBlock|state.0100 ; 0                 ; 0       ;
-;      - bo:operatorBlock|regH[10] ; 0                 ; 0       ;
-;      - bo:operatorBlock|regS[10] ; 0                 ; 0       ;
+;      - bc:comandBlock|LH         ; 0                 ; 0       ;
+;      - bo:operatorBlock|regH[10] ; 1                 ; 0       ;
+;      - bo:operatorBlock|regS[10] ; 1                 ; 0       ;
 ;      - bo:operatorBlock|regH[11] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[11] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regH[12] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[12] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regH[13] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[13] ; 0                 ; 0       ;
-;      - bo:operatorBlock|regH[14] ; 1                 ; 0       ;
-;      - bo:operatorBlock|regS[14] ; 1                 ; 0       ;
+;      - bo:operatorBlock|regH[14] ; 0                 ; 0       ;
+;      - bo:operatorBlock|regS[14] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regH[15] ; 0                 ; 0       ;
 ;      - bo:operatorBlock|regS[15] ; 0                 ; 0       ;
 ; SW[0]                            ;                   ;         ;
-; KEY[2]                           ;                   ;         ;
-;      - bc:comandBlock|M1[1]      ; 0                 ; 6       ;
-;      - bc:comandBlock|M1[0]      ; 0                 ; 6       ;
-;      - bc:comandBlock|M2[1]      ; 0                 ; 6       ;
-;      - bc:comandBlock|M0[0]      ; 0                 ; 6       ;
-;      - bc:comandBlock|M0[1]      ; 0                 ; 6       ;
-;      - bc:comandBlock|H          ; 0                 ; 6       ;
-;      - bc:comandBlock|LS         ; 0                 ; 6       ;
-;      - bc:comandBlock|LX         ; 0                 ; 6       ;
-;      - bc:comandBlock|LH         ; 0                 ; 6       ;
-;      - bc:comandBlock|state~12   ; 0                 ; 6       ;
-;      - bc:comandBlock|state~13   ; 0                 ; 6       ;
-;      - bc:comandBlock|state~14   ; 0                 ; 6       ;
-;      - bc:comandBlock|state~15   ; 0                 ; 6       ;
-;      - bc:comandBlock|state~16   ; 0                 ; 6       ;
-;      - bc:comandBlock|state~17   ; 0                 ; 6       ;
+; SW[9]                            ;                   ;         ;
+; SW[3]                            ;                   ;         ;
 ; SW[2]                            ;                   ;         ;
 ; SW[1]                            ;                   ;         ;
 +----------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                              ;
-+-------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name              ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; KEY[0]            ; PIN_R22          ; 50      ; Clock        ; no     ; --                   ; --               ; --                        ;
-; KEY[2]            ; PIN_T22          ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; bc:comandBlock|LH ; LCFF_X30_Y10_N9  ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; bc:comandBlock|LS ; LCFF_X30_Y10_N23 ; 16      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; bc:comandBlock|LX ; LCFF_X49_Y10_N1  ; 3       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+-------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                  ;
++----------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
+; Name                       ; Location           ; Fan-Out ; Usage                                 ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
+; KEY[0]                     ; PIN_R22            ; 54      ; Clock                                 ; no     ; --                   ; --               ; --                        ;
+; SW[9]                      ; PIN_L2             ; 19      ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; bc:comandBlock|LH          ; LCFF_X30_Y11_N29   ; 17      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; bc:comandBlock|LX          ; LCFF_X33_Y11_N27   ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; bo:operatorBlock|regS[5]~1 ; LCCOMB_X32_Y11_N30 ; 16      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
++----------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1464,14 +1453,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                                                                    ; Fan-Out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; KEY[0]                                                                                                                                                  ; 50      ;
-; bc:comandBlock|M1[1]                                                                                                                                    ; 18      ;
-; bc:comandBlock|M1[0]                                                                                                                                    ; 18      ;
-; bc:comandBlock|LH                                                                                                                                       ; 16      ;
-; bc:comandBlock|LS                                                                                                                                       ; 16      ;
-; bc:comandBlock|H                                                                                                                                        ; 16      ;
-; bc:comandBlock|M2[1]                                                                                                                                    ; 16      ;
-; KEY[2]                                                                                                                                                  ; 15      ;
+; KEY[0]                                                                                                                                                  ; 54      ;
+; bc:comandBlock|H                                                                                                                                        ; 33      ;
+; bc:comandBlock|M1[1]                                                                                                                                    ; 20      ;
+; bc:comandBlock|M1[0]                                                                                                                                    ; 20      ;
+; SW[9]                                                                                                                                                   ; 19      ;
+; bc:comandBlock|flag                                                                                                                                     ; 18      ;
+; bc:comandBlock|LH                                                                                                                                       ; 17      ;
+; bc:comandBlock|M2[1]                                                                                                                                    ; 17      ;
+; bo:operatorBlock|regS[5]~1                                                                                                                              ; 16      ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_7_result_int[5]~8  ; 15      ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_6_result_int[5]~8  ; 15      ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_13_result_int[5]~8 ; 13      ;
@@ -1481,6 +1471,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_8_result_int[5]~8  ; 12      ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_3_result_int[4]~6  ; 12      ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_14_result_int[5]~8 ; 11      ;
+; bc:comandBlock|state.0000                                                                                                                               ; 10      ;
 ; bo:operatorBlock|regS[0]                                                                                                                                ; 9       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_15_result_int[5]~8 ; 9       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_9_result_int[5]~8  ; 9       ;
@@ -1494,33 +1485,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|display:dis|Add1~4                                                                                                                     ; 7       ;
 ; bo:operatorBlock|display:dis|Add1~2                                                                                                                     ; 7       ;
 ; bo:operatorBlock|display:dis|Add1~0                                                                                                                     ; 7       ;
-; bc:comandBlock|state.0001                                                                                                                               ; 6       ;
+; bc:comandBlock|state.0011                                                                                                                               ; 6       ;
 ; bo:operatorBlock|regS[2]                                                                                                                                ; 6       ;
 ; bo:operatorBlock|regS[4]                                                                                                                                ; 6       ;
 ; bo:operatorBlock|regS[5]                                                                                                                                ; 6       ;
 ; bo:operatorBlock|regS[6]                                                                                                                                ; 6       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div2|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_15_result_int[5]~8 ; 6       ;
-; bc:comandBlock|state.0011                                                                                                                               ; 5       ;
+; bc:comandBlock|LX                                                                                                                                       ; 5       ;
 ; bo:operatorBlock|regS[1]                                                                                                                                ; 5       ;
 ; bo:operatorBlock|regS[7]                                                                                                                                ; 5       ;
 ; bo:operatorBlock|regS[8]                                                                                                                                ; 5       ;
-; bc:comandBlock|state.0010                                                                                                                               ; 4       ;
+; bc:comandBlock|state.0111                                                                                                                               ; 4       ;
 ; bc:comandBlock|state.0101                                                                                                                               ; 4       ;
 ; bo:operatorBlock|regS[9]                                                                                                                                ; 4       ;
+; bc:comandBlock|state.0001                                                                                                                               ; 4       ;
+; bc:comandBlock|state.0100                                                                                                                               ; 3       ;
 ; bc:comandBlock|state.0110                                                                                                                               ; 3       ;
-; bc:comandBlock|LX                                                                                                                                       ; 3       ;
+; bc:comandBlock|state.0010                                                                                                                               ; 3       ;
+; bc:comandBlock|M0[1]                                                                                                                                    ; 3       ;
+; bc:comandBlock|M0[0]                                                                                                                                    ; 3       ;
 ; ~GND                                                                                                                                                    ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|StageOut[67]~58            ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[37]~102           ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[32]~101           ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[27]~100           ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[22]~99            ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~47                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~44                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~41                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~38                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~35                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~32                                                                                                                    ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux0~0                                                                                                                          ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux1~0                                                                                                                          ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux2~0                                                                                                                          ; 2       ;
@@ -1539,16 +1528,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|regS[11]                                                                                                                               ; 2       ;
 ; bo:operatorBlock|mux:M1|Mux5~0                                                                                                                          ; 2       ;
 ; bo:operatorBlock|regS[10]                                                                                                                               ; 2       ;
-; bc:comandBlock|state.0100                                                                                                                               ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~29                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~28                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~27                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~26                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~25                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~24                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~23                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~22                                                                                                                    ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~21                                                                                                                    ; 2       ;
+; bc:comandBlock|Selector4~0                                                                                                                              ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux14~0                                                                                                                         ; 2       ;
 ; bo:operatorBlock|mux:M1|Mux14~1                                                                                                                         ; 2       ;
 ; bo:operatorBlock|regX[1]                                                                                                                                ; 2       ;
@@ -1556,7 +1536,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|mux:M1|Mux13~1                                                                                                                         ; 2       ;
 ; bo:operatorBlock|regX[2]                                                                                                                                ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux12~0                                                                                                                         ; 2       ;
-; bo:operatorBlock|mux:M1|Mux12~0                                                                                                                         ; 2       ;
+; bo:operatorBlock|mux:M1|Mux12~1                                                                                                                         ; 2       ;
+; bo:operatorBlock|regX[3]                                                                                                                                ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux11~0                                                                                                                         ; 2       ;
 ; bo:operatorBlock|mux:M1|Mux11~0                                                                                                                         ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux10~0                                                                                                                         ; 2       ;
@@ -1569,12 +1550,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|mux:M1|Mux7~0                                                                                                                          ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux6~0                                                                                                                          ; 2       ;
 ; bo:operatorBlock|mux:M1|Mux6~0                                                                                                                          ; 2       ;
-; bo:operatorBlock|somador:sum|Add0~2                                                                                                                     ; 2       ;
+; bc:comandBlock|LS                                                                                                                                       ; 2       ;
 ; bo:operatorBlock|mux:M2|Mux15~0                                                                                                                         ; 2       ;
 ; bo:operatorBlock|mux:M1|Mux15~1                                                                                                                         ; 2       ;
-; bc:comandBlock|M0[1]                                                                                                                                    ; 2       ;
-; bc:comandBlock|M0[0]                                                                                                                                    ; 2       ;
 ; bo:operatorBlock|regX[0]                                                                                                                                ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~45                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~42                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~39                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~36                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~33                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~30                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~18                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~16                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~14                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~12                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~10                                                                                                                    ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~8                                                                                                                     ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~6                                                                                                                     ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~4                                                                                                                     ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~2                                                                                                                     ; 2       ;
+; bo:operatorBlock|somador:sum|Add0~0                                                                                                                     ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT15                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT14                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT13                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT12                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT11                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT10                                                                  ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT9                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT8                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT7                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT6                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT5                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT4                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT3                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT2                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT1                                                                   ; 2       ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2                                                                            ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_13_result_int[2]~2 ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_13_result_int[1]~0 ; 2       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_12_result_int[2]~2 ; 2       ;
@@ -1591,8 +1602,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|add_sub_3_result_int[1]~0  ; 2       ;
 ; SW[1]                                                                                                                                                   ; 1       ;
 ; SW[2]                                                                                                                                                   ; 1       ;
+; SW[3]                                                                                                                                                   ; 1       ;
 ; SW[0]                                                                                                                                                   ; 1       ;
-; bc:comandBlock|LX~0                                                                                                                                     ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|StageOut[72]~61            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|StageOut[71]~60            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div1|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|StageOut[66]~59            ; 1       ;
@@ -1604,29 +1615,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[38]~96            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[33]~95            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[28]~94            ; 1       ;
-; bc:comandBlock|state~17                                                                                                                                 ; 1       ;
-; bc:comandBlock|state~16                                                                                                                                 ; 1       ;
-; bc:comandBlock|state~15                                                                                                                                 ; 1       ;
-; bc:comandBlock|state~14                                                                                                                                 ; 1       ;
-; bc:comandBlock|state~13                                                                                                                                 ; 1       ;
-; bc:comandBlock|state~12                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~16                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~47                                                                                                                    ; 1       ;
+; bo:operatorBlock|regS~15                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~44                                                                                                                    ; 1       ;
+; bo:operatorBlock|regS~14                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~41                                                                                                                    ; 1       ;
+; bo:operatorBlock|regS~13                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~38                                                                                                                    ; 1       ;
+; bo:operatorBlock|regS~12                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~35                                                                                                                    ; 1       ;
+; bo:operatorBlock|regS~11                                                                                                                                ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~32                                                                                                                    ; 1       ;
+; bc:comandBlock|state~28                                                                                                                                 ; 1       ;
+; bc:comandBlock|Selector2~0                                                                                                                              ; 1       ;
+; bc:comandBlock|state~27                                                                                                                                 ; 1       ;
+; bc:comandBlock|state~26                                                                                                                                 ; 1       ;
+; bc:comandBlock|state~25                                                                                                                                 ; 1       ;
+; bc:comandBlock|state~24                                                                                                                                 ; 1       ;
+; bc:comandBlock|state~23                                                                                                                                 ; 1       ;
+; bc:comandBlock|state~22                                                                                                                                 ; 1       ;
+; bc:comandBlock|Selector0~0                                                                                                                              ; 1       ;
 ; bo:operatorBlock|regH[15]                                                                                                                               ; 1       ;
 ; bo:operatorBlock|regH[14]                                                                                                                               ; 1       ;
 ; bo:operatorBlock|regH[13]                                                                                                                               ; 1       ;
 ; bo:operatorBlock|regH[12]                                                                                                                               ; 1       ;
 ; bo:operatorBlock|regH[11]                                                                                                                               ; 1       ;
 ; bo:operatorBlock|regH[10]                                                                                                                               ; 1       ;
-; bc:comandBlock|LS~2                                                                                                                                     ; 1       ;
-; bc:comandBlock|WideOr0~0                                                                                                                                ; 1       ;
-; bc:comandBlock|WideOr2                                                                                                                                  ; 1       ;
-; bc:comandBlock|WideOr1                                                                                                                                  ; 1       ;
-; bc:comandBlock|M0~0                                                                                                                                     ; 1       ;
-; bc:comandBlock|M1~0                                                                                                                                     ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~29                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~28                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~27                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~26                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~25                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~24                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~23                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~22                                                                                                                    ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~21                                                                                                                    ; 1       ;
+; bc:comandBlock|Selector1~0                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector9~0                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector3~1                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector3~0                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector8~0                                                                                                                              ; 1       ;
+; bo:operatorBlock|somador:sum|Add0~20                                                                                                                    ; 1       ;
+; bc:comandBlock|Selector4~1                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector5~1                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector5~0                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector6~0                                                                                                                              ; 1       ;
+; bc:comandBlock|Selector7~0                                                                                                                              ; 1       ;
+; bo:operatorBlock|regS~10                                                                                                                                ; 1       ;
+; bo:operatorBlock|regS~9                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~8                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~7                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~6                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~5                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~4                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~3                                                                                                                                 ; 1       ;
+; bo:operatorBlock|regS~2                                                                                                                                 ; 1       ;
 ; bo:operatorBlock|regH[1]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|mux:M1|Mux14~0                                                                                                                         ; 1       ;
 ; bo:operatorBlock|mux:M0|Mux14~1                                                                                                                         ; 1       ;
 ; bo:operatorBlock|mux:M1|Mux13~0                                                                                                                         ; 1       ;
 ; bo:operatorBlock|regH[2]                                                                                                                                ; 1       ;
+; bo:operatorBlock|mux:M1|Mux12~0                                                                                                                         ; 1       ;
 ; bo:operatorBlock|regH[3]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|regH[4]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|regH[5]                                                                                                                                ; 1       ;
@@ -1634,6 +1684,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|regH[7]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|regH[8]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|regH[9]                                                                                                                                ; 1       ;
+; bo:operatorBlock|regS~0                                                                                                                                 ; 1       ;
 ; bo:operatorBlock|regH[0]                                                                                                                                ; 1       ;
 ; bo:operatorBlock|mux:M1|Mux15~0                                                                                                                         ; 1       ;
 ; bo:operatorBlock|mux:M0|Mux14~0                                                                                                                         ; 1       ;
@@ -1716,17 +1767,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[17]~58            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[18]~57            ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div0|lpm_divide_aem:auto_generated|sign_div_unsign_klh:divider|alt_u_div_a2f:divider|StageOut[18]~56            ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~45                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~43                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~42                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~40                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~39                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~37                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~36                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~34                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~33                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~31                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~30                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1~3                                                                         ; 1       ;
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1~2                                                                         ; 1       ;
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1~1                                                                         ; 1       ;
@@ -1763,42 +1808,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1~DATAOUT2                                                                  ; 1       ;
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1~DATAOUT1                                                                  ; 1       ;
 ; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1                                                                           ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~20                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~19                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~18                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~17                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~16                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~15                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~14                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~13                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~12                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~11                                                                                                                    ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~10                                                                                                                    ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~9                                                                                                                     ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~8                                                                                                                     ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~7                                                                                                                     ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~6                                                                                                                     ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~5                                                                                                                     ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~4                                                                                                                     ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~3                                                                                                                     ; 1       ;
 ; bo:operatorBlock|somador:sum|Add0~1                                                                                                                     ; 1       ;
-; bo:operatorBlock|somador:sum|Add0~0                                                                                                                     ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT15                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT14                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT13                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT12                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT11                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT10                                                                  ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT9                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT8                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT7                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT6                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT5                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT4                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT3                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT2                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2~DATAOUT1                                                                   ; 1       ;
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2                                                                            ; 1       ;
 ; bo:operatorBlock|display:dis|Add5~3                                                                                                                     ; 1       ;
 ; bo:operatorBlock|display:dis|Add5~1                                                                                                                     ; 1       ;
 ; bo:operatorBlock|display:dis|lpm_divide:Div2|lpm_divide_gem:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_m2f:divider|add_sub_15_result_int[4]~7 ; 1       ;
@@ -1890,8 +1909,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 ; Name                                                                             ; Mode                       ; Location           ; Sign Representation ; Has Input Shift Register Chain ; Data A Input Register ; Data B Input Register ; Pipeline Register ; Output Register ;
 +----------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
-; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X28_Y10_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
-;    bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1 ;                            ; DSPMULT_X28_Y10_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
+; bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_out2     ; Simple Multiplier (18-bit) ; DSPOUT_X28_Y11_N2  ;                     ; No                             ;                       ;                       ;                   ; no              ;
+;    bo:operatorBlock|somador:sum|lpm_mult:Mult0|mult_l8t:auto_generated|mac_mult1 ;                            ; DSPMULT_X28_Y11_N0 ; Variable            ;                                ; no                    ; no                    ; no                ;                 ;
 +----------------------------------------------------------------------------------+----------------------------+--------------------+---------------------+--------------------------------+-----------------------+-----------------------+-------------------+-----------------+
 
 
@@ -1900,151 +1919,159 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 303 / 54,004 ( < 1 % ) ;
+; Block interconnects         ; 374 / 54,004 ( < 1 % ) ;
 ; C16 interconnects           ; 3 / 2,100 ( < 1 % )    ;
-; C4 interconnects            ; 91 / 36,000 ( < 1 % )  ;
-; Direct links                ; 117 / 54,004 ( < 1 % ) ;
+; C4 interconnects            ; 110 / 36,000 ( < 1 % ) ;
+; Direct links                ; 104 / 54,004 ( < 1 % ) ;
 ; Global clocks               ; 0 / 16 ( 0 % )         ;
-; Local interconnects         ; 103 / 18,752 ( < 1 % ) ;
-; R24 interconnects           ; 16 / 1,900 ( < 1 % )   ;
-; R4 interconnects            ; 220 / 46,920 ( < 1 % ) ;
+; Local interconnects         ; 88 / 18,752 ( < 1 % )  ;
+; R24 interconnects           ; 19 / 1,900 ( 1 % )     ;
+; R4 interconnects            ; 276 / 46,920 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.50) ; Number of LABs  (Total = 20) ;
+; Number of Logic Elements  (Average = 11.04) ; Number of LABs  (Total = 25) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 0                            ;
-; 2                                           ; 1                            ;
-; 3                                           ; 0                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 2                            ;
+; 3                                           ; 1                            ;
 ; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 3                            ;
-; 8                                           ; 1                            ;
+; 6                                           ; 1                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 1                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
+; 13                                          ; 3                            ;
+; 14                                          ; 1                            ;
 ; 15                                          ; 2                            ;
-; 16                                          ; 11                           ;
+; 16                                          ; 9                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.45) ; Number of LABs  (Total = 20) ;
+; LAB-wide Signals  (Average = 0.52) ; Number of LABs  (Total = 25) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 5                            ;
-; 2 Clock enables                    ; 4                            ;
+; 1 Clock                            ; 8                            ;
+; 1 Clock enable                     ; 2                            ;
+; 2 Clock enables                    ; 3                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.95) ; Number of LABs  (Total = 20) ;
+; Number of Signals Sourced  (Average = 12.36) ; Number of LABs  (Total = 25) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 2                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 2                            ;
+; 4                                            ; 0                            ;
 ; 5                                            ; 1                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 2                            ;
-; 8                                            ; 0                            ;
+; 6                                            ; 2                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 2                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 1                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 3                            ;
-; 15                                           ; 5                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 4                            ;
+; 15                                           ; 3                            ;
 ; 16                                           ; 1                            ;
-; 17                                           ; 0                            ;
+; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
-; 22                                           ; 0                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 3                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 1                            ;
 ; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.35) ; Number of LABs  (Total = 20) ;
+; Number of Signals Sourced Out  (Average = 8.36) ; Number of LABs  (Total = 25) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 1                            ;
+; 1                                               ; 2                            ;
 ; 2                                               ; 2                            ;
-; 3                                               ; 0                            ;
+; 3                                               ; 2                            ;
 ; 4                                               ; 2                            ;
-; 5                                               ; 0                            ;
-; 6                                               ; 0                            ;
-; 7                                               ; 5                            ;
-; 8                                               ; 1                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 2                            ;
-; 11                                              ; 1                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 0                            ;
-; 14                                              ; 2                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 1                            ;
+; 10                                              ; 1                            ;
+; 11                                              ; 2                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 1                            ;
 ; 15                                              ; 0                            ;
-; 16                                              ; 1                            ;
+; 16                                              ; 3                            ;
 ; 17                                              ; 0                            ;
-; 18                                              ; 1                            ;
+; 18                                              ; 0                            ;
+; 19                                              ; 0                            ;
+; 20                                              ; 0                            ;
+; 21                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 10.45) ; Number of LABs  (Total = 20) ;
+; Number of Distinct Inputs  (Average = 11.92) ; Number of LABs  (Total = 25) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 2                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 3                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 1                            ;
+; 4                                            ; 1                            ;
+; 5                                            ; 2                            ;
+; 6                                            ; 2                            ;
 ; 7                                            ; 1                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 2                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 5                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 2                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
-; 17                                           ; 3                            ;
+; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
+; 21                                           ; 1                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 1                            ;
 ; 28                                           ; 0                            ;
-; 29                                           ; 0                            ;
-; 30                                           ; 0                            ;
+; 29                                           ; 1                            ;
+; 30                                           ; 1                            ;
 ; 31                                           ; 0                            ;
 ; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
@@ -2084,17 +2111,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
+; I/O             ; KEY[0]               ; 1.7               ;
++-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
 
 
-+----------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                  ;
-+-----------------+--------------------------+-------------------+
-; Source Register ; Destination Register     ; Delay Added in ns ;
-+-----------------+--------------------------+-------------------+
-; KEY[0]          ; bo:operatorBlock|regH[3] ; 0.049             ;
-+-----------------+--------------------------+-------------------+
++-----------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                   ;
++-----------------+---------------------------+-------------------+
+; Source Register ; Destination Register      ; Delay Added in ns ;
++-----------------+---------------------------+-------------------+
+; KEY[0]          ; bc:comandBlock|state.0100 ; 0.343             ;
++-----------------+---------------------------+-------------------+
 Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
 
 
@@ -2464,7 +2493,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2476,7 +2505,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 38 output pins without output pin load capacitance assignment
     Info (306007): Pin "LEDR[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2523,10 +2552,10 @@ Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e 2121101043 (1)/Tarefa 4/output_files/Tarefa4.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/aluno/Downloads/SistemasDigitais-main/SistemasDigitais-main/output_files/Tarefa4.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 349 warnings
     Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Tue Jan 31 21:53:29 2023
+    Info: Processing ended: Tue Feb 07 21:45:53 2023
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
@@ -2534,6 +2563,6 @@ Info: Quartus II 64-Bit Fitter was successful. 0 errors, 349 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e 2121101043 (1)/Tarefa 4/output_files/Tarefa4.fit.smsg.
+The suppressed messages can be found in C:/Users/aluno/Downloads/SistemasDigitais-main/SistemasDigitais-main/output_files/Tarefa4.fit.smsg.
 
 

@@ -1,5 +1,5 @@
 Flow report for Tarefa4
-Tue Jan 31 21:53:34 2023
+Tue Feb 07 21:45:58 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Jan 31 21:53:34 2023      ;
+; Flow Status                        ; Successful - Tue Feb 07 21:45:58 2023      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; Tarefa4                                    ;
 ; Top-level Entity Name              ; main                                       ;
 ; Family                             ; Cyclone II                                 ;
 ; Device                             ; EP2C20F484C7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 250 / 18,752 ( 1 % )                       ;
-;     Total combinational functions  ; 246 / 18,752 ( 1 % )                       ;
-;     Dedicated logic registers      ; 50 / 18,752 ( < 1 % )                      ;
-; Total registers                    ; 50                                         ;
+; Total logic elements               ; 276 / 18,752 ( 1 % )                       ;
+;     Total combinational functions  ; 271 / 18,752 ( 1 % )                       ;
+;     Dedicated logic registers      ; 54 / 18,752 ( < 1 % )                      ;
+; Total registers                    ; 54                                         ;
 ; Total pins                         ; 52 / 315 ( 17 % )                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/31/2023 21:53:22 ;
+; Start date & time ; 02/07/2023 21:45:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Tarefa4             ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 229335799409413.167521280104280 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 229335799409413.167581714608500 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -95,10 +95,10 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4606 MB             ; 00:00:02                           ;
 ; Fitter                    ; 00:00:05     ; 1.0                     ; 4844 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4543 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4550 MB             ; 00:00:01                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4557 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 4539 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4507 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Tarefa4
-Tue Jan 31 21:53:32 2023
+Tue Feb 07 21:45:56 2023
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -101,13 +101,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
 
 
-+--------------------------------------------------+
-; Slow Model Fmax Summary                          ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 119.46 MHz ; 119.46 MHz      ; KEY[0]     ;      ;
-+------------+-----------------+------------+------+
++-------------------------------------------------+
+; Slow Model Fmax Summary                         ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 129.9 MHz ; 129.9 MHz       ; KEY[0]     ;      ;
++-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -116,7 +116,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------+---------------+
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
-; KEY[0] ; -7.371 ; -232.254      ;
+; KEY[0] ; -6.698 ; -248.334      ;
 +--------+--------+---------------+
 
 
@@ -125,7 +125,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+-------+---------------+
 ; Clock  ; Slack ; End Point TNS ;
 +--------+-------+---------------+
-; KEY[0] ; 0.634 ; 0.000         ;
+; KEY[0] ; 0.445 ; 0.000         ;
 +--------+-------+---------------+
 
 
@@ -146,7 +146,7 @@ No paths to report.
 +--------+--------+----------------------+
 ; Clock  ; Slack  ; End Point TNS        ;
 +--------+--------+----------------------+
-; KEY[0] ; -1.469 ; -62.569              ;
+; KEY[0] ; -1.469 ; -67.457              ;
 +--------+--------+----------------------+
 
 
@@ -155,106 +155,106 @@ No paths to report.
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -7.371 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.365      ;
-; -7.369 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.407      ;
-; -7.325 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.363      ;
-; -7.324 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.362      ;
-; -7.323 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.405      ;
-; -7.322 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.404      ;
-; -7.321 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.359      ;
-; -7.319 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.401      ;
-; -7.317 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.355      ;
-; -7.315 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.397      ;
-; -7.306 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.344      ;
-; -7.305 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.343      ;
-; -7.304 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.386      ;
-; -7.303 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.385      ;
-; -7.269 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.307      ;
-; -7.223 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.305      ;
-; -7.222 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.216      ;
-; -7.222 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.304      ;
-; -7.220 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.258      ;
-; -7.215 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.209      ;
-; -7.213 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.251      ;
-; -7.207 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.201      ;
-; -7.205 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.243      ;
-; -7.205 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.243      ;
-; -7.204 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.286      ;
-; -7.203 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.285      ;
-; -7.201 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.195      ;
-; -7.199 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.237      ;
-; -7.162 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.200      ;
-; -7.159 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.241      ;
-; -7.158 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.240      ;
-; -7.156 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.374      ; 8.568      ;
-; -7.155 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.237      ;
-; -7.154 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.610      ;
-; -7.153 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.380      ; 8.571      ;
-; -7.151 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.233      ;
-; -7.151 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.613      ;
-; -7.140 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.222      ;
-; -7.139 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.221      ;
-; -7.120 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.158      ;
-; -7.119 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.157      ;
-; -7.119 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.157      ;
-; -7.117 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.199      ;
-; -7.117 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.199      ;
-; -7.116 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.198      ;
-; -7.115 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.197      ;
-; -7.113 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.151      ;
-; -7.112 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.194      ;
-; -7.108 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.190      ;
-; -7.105 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.143      ;
-; -7.099 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.137      ;
-; -7.099 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.137      ;
-; -7.097 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.179      ;
-; -7.096 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.178      ;
-; -7.085 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.374      ; 8.497      ;
-; -7.083 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.121      ;
-; -7.083 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.539      ;
-; -7.077 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.115      ;
-; -7.056 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.094      ;
-; -7.054 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.510      ;
-; -7.051 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.513      ;
-; -7.049 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.087      ;
-; -7.041 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.079      ;
-; -7.035 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.073      ;
-; -7.034 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.116      ;
-; -7.033 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.115      ;
-; -7.032 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.488      ;
-; -7.029 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.491      ;
-; -7.017 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.099      ;
-; -7.017 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.099      ;
-; -7.013 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.051      ;
-; -7.010 ; bo:operatorBlock|regH[2]  ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.044     ; 8.004      ;
-; -7.006 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.044      ;
-; -6.998 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.036      ;
-; -6.995 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.077      ;
-; -6.992 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 8.030      ;
-; -6.990 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.446      ;
-; -6.987 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.449      ;
-; -6.983 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.439      ;
-; -6.961 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.417      ;
-; -6.958 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.418     ; 7.578      ;
-; -6.953 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.035      ;
-; -6.953 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.035      ;
-; -6.950 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.988      ;
-; -6.947 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.403      ;
-; -6.945 ; bo:operatorBlock|regH[2]  ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.983      ;
-; -6.944 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.406      ;
-; -6.944 ; bo:operatorBlock|regH[2]  ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.982      ;
-; -6.943 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.380      ; 8.361      ;
-; -6.943 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.981      ;
-; -6.941 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.424      ; 8.403      ;
-; -6.926 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.008      ;
-; -6.925 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 8.007      ;
-; -6.919 ; bo:operatorBlock|regS[12] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.424     ; 7.533      ;
-; -6.919 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.418      ; 8.375      ;
-; -6.918 ; bo:operatorBlock|regS[3]  ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.956      ;
-; -6.910 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 7.992      ;
-; -6.910 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.044      ; 7.992      ;
-; -6.907 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.945      ;
-; -6.904 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.006      ; 7.948      ;
+; -6.698 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 8.044      ;
+; -6.693 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 8.041      ;
+; -6.682 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 8.028      ;
+; -6.682 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.718      ;
+; -6.677 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.715      ;
+; -6.676 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 8.024      ;
+; -6.673 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 8.021      ;
+; -6.666 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.702      ;
+; -6.660 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.698      ;
+; -6.657 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 8.005      ;
+; -6.657 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.695      ;
+; -6.641 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.679      ;
+; -6.627 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.902      ;
+; -6.625 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.900      ;
+; -6.624 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.970      ;
+; -6.619 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.967      ;
+; -6.611 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.576      ;
+; -6.609 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.574      ;
+; -6.608 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.644      ;
+; -6.608 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.954      ;
+; -6.607 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.882      ;
+; -6.603 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.641      ;
+; -6.602 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.950      ;
+; -6.599 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.947      ;
+; -6.596 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.208      ; 7.842      ;
+; -6.593 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.868      ;
+; -6.592 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.628      ;
+; -6.591 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.556      ;
+; -6.589 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.864      ;
+; -6.583 ; bo:operatorBlock|regH[11] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.621      ;
+; -6.583 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.931      ;
+; -6.580 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.102     ; 7.516      ;
+; -6.577 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.542      ;
+; -6.574 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.258      ; 7.870      ;
+; -6.573 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.848      ;
+; -6.573 ; bo:operatorBlock|regS[14] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.611      ;
+; -6.573 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.538      ;
+; -6.564 ; bo:operatorBlock|regS[14] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.002      ; 7.604      ;
+; -6.558 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.906      ;
+; -6.557 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.903      ;
+; -6.557 ; bo:operatorBlock|regH[12] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.593      ;
+; -6.557 ; bo:operatorBlock|regH[13] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.593      ;
+; -6.557 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.073     ; 7.522      ;
+; -6.556 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.258      ; 7.852      ;
+; -6.553 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.828      ;
+; -6.552 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.880      ;
+; -6.551 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.826      ;
+; -6.550 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.878      ;
+; -6.548 ; bo:operatorBlock|regH[12] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.586      ;
+; -6.548 ; bo:operatorBlock|regH[13] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.586      ;
+; -6.544 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.892      ;
+; -6.543 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.889      ;
+; -6.542 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.890      ;
+; -6.542 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.580      ;
+; -6.541 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.577      ;
+; -6.540 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.886      ;
+; -6.540 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.052     ; 7.526      ;
+; -6.535 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.883      ;
+; -6.534 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.020     ; 7.552      ;
+; -6.533 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.808      ;
+; -6.529 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.018      ; 7.585      ;
+; -6.528 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.566      ;
+; -6.527 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.873      ;
+; -6.527 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.563      ;
+; -6.526 ; bo:operatorBlock|regH[15] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.564      ;
+; -6.526 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.564      ;
+; -6.525 ; bc:comandBlock|M0[0]      ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.853      ;
+; -6.525 ; bo:operatorBlock|regH[15] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.561      ;
+; -6.524 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.020      ; 7.582      ;
+; -6.524 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.560      ;
+; -6.522 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.870      ;
+; -6.522 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.208      ; 7.768      ;
+; -6.521 ; bo:operatorBlock|regS[13] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.559      ;
+; -6.519 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.794      ;
+; -6.519 ; bo:operatorBlock|regH[3]  ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.557      ;
+; -6.515 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.790      ;
+; -6.513 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.018      ; 7.569      ;
+; -6.512 ; bo:operatorBlock|regS[13] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.002      ; 7.552      ;
+; -6.511 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.857      ;
+; -6.507 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.020      ; 7.565      ;
+; -6.505 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.258      ; 7.801      ;
+; -6.505 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.853      ;
+; -6.504 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.020      ; 7.562      ;
+; -6.502 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.850      ;
+; -6.500 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.258      ; 7.796      ;
+; -6.499 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.237      ; 7.774      ;
+; -6.495 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.841      ;
+; -6.490 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.838      ;
+; -6.488 ; bo:operatorBlock|regS[0]  ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.020      ; 7.546      ;
+; -6.486 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.834      ;
+; -6.484 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.832      ;
+; -6.483 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.829      ;
+; -6.482 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.258      ; 7.778      ;
+; -6.481 ; bo:operatorBlock|regH[4]  ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.002     ; 7.517      ;
+; -6.479 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.308      ; 7.825      ;
+; -6.478 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.806      ;
+; -6.476 ; bo:operatorBlock|regH[4]  ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 7.514      ;
+; -6.476 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.804      ;
+; -6.473 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.310      ; 7.821      ;
+; -6.471 ; bc:comandBlock|M0[1]      ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.290      ; 7.799      ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -263,106 +263,106 @@ No paths to report.
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; 0.634 ; bc:comandBlock|state.0001 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.921      ;
-; 0.773 ; bc:comandBlock|state.0011 ; bc:comandBlock|state.0100 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.059      ;
-; 0.913 ; bc:comandBlock|state.0110 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.199      ;
-; 0.922 ; bc:comandBlock|state.0001 ; bc:comandBlock|state.0010 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.208      ;
-; 0.976 ; bc:comandBlock|state.0101 ; bc:comandBlock|state.0110 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.262      ;
-; 0.980 ; bc:comandBlock|state.0100 ; bc:comandBlock|state.0101 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.266      ;
-; 1.012 ; bc:comandBlock|state.0010 ; bc:comandBlock|state.0011 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.298      ;
-; 1.057 ; bc:comandBlock|H          ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.761      ;
-; 1.182 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 1.892      ;
-; 1.182 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 1.892      ;
-; 1.182 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 1.892      ;
-; 1.182 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 1.892      ;
-; 1.182 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 1.892      ;
-; 1.195 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.899      ;
-; 1.195 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.899      ;
-; 1.195 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.899      ;
-; 1.195 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.899      ;
-; 1.195 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 1.899      ;
-; 1.213 ; bc:comandBlock|state.0101 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.248      ;
-; 1.214 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.249      ;
-; 1.214 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.249      ;
-; 1.404 ; bc:comandBlock|H          ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 2.114      ;
-; 1.409 ; bc:comandBlock|H          ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 2.113      ;
-; 1.410 ; bc:comandBlock|H          ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 2.114      ;
-; 1.506 ; bc:comandBlock|state.0100 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.541      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.557 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.887      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.561 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.891      ;
-; 1.581 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.867      ;
-; 1.581 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.867      ;
-; 1.581 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.867      ;
-; 1.581 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.867      ;
-; 1.581 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.867      ;
-; 1.629 ; bc:comandBlock|state.0110 ; bc:comandBlock|M0[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.664      ;
-; 1.653 ; bc:comandBlock|state.0010 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.688      ;
-; 1.664 ; bc:comandBlock|H          ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 2.374      ;
-; 1.668 ; bc:comandBlock|state.0011 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.703      ;
-; 1.681 ; bc:comandBlock|state.0001 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.716      ;
-; 1.682 ; bc:comandBlock|state.0001 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.717      ;
-; 1.687 ; bc:comandBlock|state.0001 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.722      ;
-; 1.688 ; bc:comandBlock|state.0001 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.723      ;
-; 1.819 ; bc:comandBlock|state.0011 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.854      ;
-; 1.822 ; bc:comandBlock|state.0011 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.857      ;
-; 1.822 ; bc:comandBlock|state.0010 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.857      ;
-; 1.823 ; bc:comandBlock|state.0110 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.858      ;
-; 1.833 ; bc:comandBlock|state.0010 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.868      ;
-; 1.851 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.137      ;
-; 1.851 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.137      ;
-; 1.851 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.137      ;
-; 1.851 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.137      ;
-; 1.851 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.137      ;
-; 1.911 ; bc:comandBlock|state.0011 ; bc:comandBlock|M0[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.749      ; 2.946      ;
-; 1.980 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.748      ; 3.014      ;
-; 1.980 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.748      ; 3.014      ;
-; 1.980 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.748      ; 3.014      ;
-; 2.027 ; bc:comandBlock|H          ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 2.737      ;
-; 2.045 ; bo:operatorBlock|regH[15] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.006      ; 2.337      ;
-; 2.248 ; bc:comandBlock|H          ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 2.958      ;
-; 2.258 ; bc:comandBlock|H          ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 2.968      ;
-; 2.261 ; bc:comandBlock|H          ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 2.965      ;
-; 2.264 ; bc:comandBlock|H          ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.418      ; 2.968      ;
-; 2.332 ; bc:comandBlock|H          ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 2.662      ;
-; 2.336 ; bc:comandBlock|H          ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 2.666      ;
-; 2.338 ; bc:comandBlock|H          ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 2.668      ;
-; 2.381 ; bc:comandBlock|H          ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.667      ;
-; 2.383 ; bc:comandBlock|H          ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.669      ;
-; 2.386 ; bc:comandBlock|H          ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.672      ;
-; 2.412 ; bc:comandBlock|H          ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.698      ;
-; 2.414 ; bc:comandBlock|H          ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.700      ;
-; 2.431 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 3.141      ;
-; 2.573 ; bo:operatorBlock|regS[15] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.859      ;
-; 2.666 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 3.376      ;
-; 2.824 ; bc:comandBlock|M2[1]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.424      ; 3.534      ;
-; 2.883 ; bc:comandBlock|H          ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.169      ;
-; 2.905 ; bo:operatorBlock|regH[15] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.191      ;
-; 2.939 ; bo:operatorBlock|regH[13] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.006      ; 3.231      ;
-; 2.963 ; bc:comandBlock|H          ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 3.293      ;
-; 2.963 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.249      ;
-; 2.964 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.374      ; 3.624      ;
-; 2.972 ; bo:operatorBlock|regS[11] ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.006     ; 3.252      ;
-; 2.985 ; bc:comandBlock|H          ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 3.315      ;
-; 2.986 ; bc:comandBlock|H          ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 3.316      ;
-; 2.992 ; bc:comandBlock|H          ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 3.322      ;
-; 2.996 ; bc:comandBlock|H          ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 3.326      ;
-; 2.999 ; bc:comandBlock|H          ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.285      ;
-; 3.001 ; bc:comandBlock|H          ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.287      ;
-; 3.003 ; bc:comandBlock|H          ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.289      ;
-; 3.008 ; bo:operatorBlock|regS[5]  ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.294      ;
-; 3.036 ; bc:comandBlock|H          ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 3.322      ;
-; 3.064 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.374      ; 3.724      ;
-; 3.072 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.374      ; 3.732      ;
+; 0.445 ; bc:comandBlock|LS         ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; bc:comandBlock|flag       ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; bc:comandBlock|LX         ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.731      ;
+; 0.638 ; bc:comandBlock|state.0011 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.925      ;
+; 0.822 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.258      ; 1.366      ;
+; 0.822 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.258      ; 1.366      ;
+; 0.822 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.258      ; 1.366      ;
+; 0.973 ; bc:comandBlock|state.0001 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.260      ;
+; 0.982 ; bc:comandBlock|state.0001 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.269      ;
+; 0.992 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.289      ; 1.567      ;
+; 1.050 ; bc:comandBlock|state.0000 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.337      ;
+; 1.052 ; bc:comandBlock|state.0000 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.338      ;
+; 1.052 ; bc:comandBlock|state.0000 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.339      ;
+; 1.119 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.318      ; 1.723      ;
+; 1.120 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.318      ; 1.724      ;
+; 1.123 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.318      ; 1.727      ;
+; 1.267 ; bc:comandBlock|H          ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.257      ; 1.810      ;
+; 1.269 ; bc:comandBlock|H          ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.257      ; 1.812      ;
+; 1.269 ; bc:comandBlock|H          ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 1.791      ;
+; 1.270 ; bc:comandBlock|H          ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.257      ; 1.813      ;
+; 1.270 ; bc:comandBlock|H          ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 1.792      ;
+; 1.273 ; bc:comandBlock|H          ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 1.795      ;
+; 1.309 ; bc:comandBlock|H          ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.207      ; 1.802      ;
+; 1.528 ; bc:comandBlock|state.0001 ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.081     ; 1.733      ;
+; 1.540 ; bc:comandBlock|H          ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.826      ;
+; 1.541 ; bc:comandBlock|state.0111 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.577      ; 2.404      ;
+; 1.565 ; bc:comandBlock|state.0011 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.852      ;
+; 1.629 ; bc:comandBlock|state.0000 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 1.916      ;
+; 1.686 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.207      ; 2.179      ;
+; 1.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.237      ; 2.214      ;
+; 1.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.237      ; 2.214      ;
+; 1.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.237      ; 2.214      ;
+; 1.743 ; bc:comandBlock|state.0010 ; bc:comandBlock|state.0011 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.577      ; 2.606      ;
+; 1.749 ; bc:comandBlock|state.0100 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.578      ; 2.613      ;
+; 1.801 ; bc:comandBlock|state.0111 ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.496      ; 2.583      ;
+; 1.811 ; bc:comandBlock|state.0101 ; bc:comandBlock|state.0110 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.496      ; 2.593      ;
+; 1.852 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.374      ;
+; 1.852 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.374      ;
+; 1.852 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.374      ;
+; 1.918 ; bc:comandBlock|H          ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.513      ;
+; 1.919 ; bc:comandBlock|H          ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.514      ;
+; 1.921 ; bc:comandBlock|H          ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 2.514      ;
+; 1.928 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.603      ;
+; 1.929 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.604      ;
+; 1.983 ; bc:comandBlock|H          ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.505      ;
+; 1.984 ; bc:comandBlock|H          ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.506      ;
+; 1.986 ; bc:comandBlock|H          ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.236      ; 2.508      ;
+; 2.000 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.675      ;
+; 2.001 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.676      ;
+; 2.003 ; bc:comandBlock|state.0011 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.289      ;
+; 2.011 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.668      ;
+; 2.011 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.668      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.034 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.310      ; 2.630      ;
+; 2.071 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.746      ;
+; 2.083 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.389      ; 2.758      ;
+; 2.149 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.806      ;
+; 2.150 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.807      ;
+; 2.155 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.812      ;
+; 2.158 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.371      ; 2.815      ;
+; 2.162 ; bc:comandBlock|state.0000 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.448      ;
+; 2.176 ; bc:comandBlock|state.0000 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.462      ;
+; 2.179 ; bc:comandBlock|state.0000 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.465      ;
+; 2.180 ; bc:comandBlock|state.0000 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.466      ;
+; 2.229 ; bc:comandBlock|H          ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.824      ;
+; 2.233 ; bc:comandBlock|H          ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.828      ;
+; 2.236 ; bc:comandBlock|H          ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.831      ;
+; 2.237 ; bc:comandBlock|H          ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.832      ;
+; 2.251 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.012      ; 2.549      ;
+; 2.251 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.012      ; 2.549      ;
+; 2.251 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.012      ; 2.549      ;
+; 2.251 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.012      ; 2.549      ;
+; 2.259 ; bc:comandBlock|H          ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.854      ;
+; 2.261 ; bc:comandBlock|H          ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 2.856      ;
+; 2.323 ; bc:comandBlock|state.0010 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.578      ; 3.187      ;
+; 2.328 ; bc:comandBlock|M2[1]      ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.614      ;
+; 2.331 ; bc:comandBlock|M1[1]      ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.617      ;
+; 2.362 ; bc:comandBlock|state.0011 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.648      ;
+; 2.362 ; bc:comandBlock|state.0000 ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.648      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.419 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.012      ;
+; 2.571 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.577      ; 3.434      ;
+; 2.581 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.297      ; 3.164      ;
+; 2.655 ; bc:comandBlock|LH         ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.941      ;
+; 2.679 ; bc:comandBlock|H          ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.309      ; 3.274      ;
+; 2.679 ; bc:comandBlock|H          ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.307      ; 3.272      ;
+; 2.688 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.577      ; 3.551      ;
+; 2.690 ; bc:comandBlock|state.0011 ; bc:comandBlock|M0[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 2.976      ;
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -390,6 +390,10 @@ No paths to report.
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|M1[1]      ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|M2[1]      ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|M2[1]      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|flag       ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|flag       ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0000 ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0000 ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0001 ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0001 ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0010 ;
@@ -402,6 +406,8 @@ No paths to report.
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0101 ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0110 ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0110 ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0111 ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0111 ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regH[0]  ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regH[0]  ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regH[10] ;
@@ -465,12 +471,6 @@ No paths to report.
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regS[8]  ;
 ; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regS[8]  ;
 ; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regS[9]  ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regS[9]  ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[0]  ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regX[0]  ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[1]  ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regX[1]  ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[2]  ;
 +--------+--------------+----------------+------------------+--------+------------+---------------------------+
 
 
@@ -479,27 +479,27 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; 4.540  ; 4.540  ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; 4.540  ; 4.540  ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; -0.035 ; -0.035 ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; -0.035 ; -0.035 ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; -0.317 ; -0.317 ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; -0.077 ; -0.077 ; Rise       ; KEY[0]          ;
+; SW[*]     ; KEY[0]     ; 2.853  ; 2.853  ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.404 ; -0.404 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.050  ; 0.050  ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.416 ; -0.416 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -0.542 ; -0.542 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 2.853  ; 2.853  ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Hold Times                                                              ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; -3.831 ; -3.831 ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; -3.831 ; -3.831 ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; 0.565  ; 0.565  ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; 0.283  ; 0.283  ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; 0.565  ; 0.565  ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; 0.325  ; 0.325  ; Rise       ; KEY[0]          ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 0.790 ; 0.790 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 0.652 ; 0.652 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.198 ; 0.198 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.664 ; 0.664 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 0.790 ; 0.790 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 0.163 ; 0.163 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------------+
@@ -507,35 +507,35 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 31.578 ; 31.578 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 31.221 ; 31.221 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 31.579 ; 31.579 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 31.593 ; 31.593 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 31.600 ; 31.600 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 31.223 ; 31.223 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 31.213 ; 31.213 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 30.838 ; 30.838 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 30.840 ; 30.840 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 30.847 ; 30.847 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 30.858 ; 30.858 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 31.223 ; 31.223 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 31.099 ; 31.099 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 29.818 ; 29.818 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 29.696 ; 29.696 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 29.471 ; 29.471 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 29.513 ; 29.513 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 29.514 ; 29.514 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 29.710 ; 29.710 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 29.818 ; 29.818 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 29.792 ; 29.792 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 27.266 ; 27.266 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 27.262 ; 27.262 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 27.205 ; 27.205 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 26.886 ; 26.886 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 27.266 ; 27.266 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 31.266 ; 31.266 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 30.870 ; 30.870 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 30.902 ; 30.902 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 31.246 ; 31.246 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 31.129 ; 31.129 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 31.265 ; 31.265 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 31.266 ; 31.266 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 31.260 ; 31.260 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 32.756 ; 32.756 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 31.800 ; 31.800 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 32.374 ; 32.374 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 32.369 ; 32.369 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 32.383 ; 32.383 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 32.387 ; 32.387 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 32.629 ; 32.629 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 32.756 ; 32.756 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 31.125 ; 31.125 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 30.780 ; 30.780 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 30.808 ; 30.808 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 30.825 ; 30.825 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 30.835 ; 30.835 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 30.815 ; 30.815 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 30.799 ; 30.799 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 31.125 ; 31.125 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 28.475 ; 28.475 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 28.453 ; 28.453 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -544,35 +544,35 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 10.725 ; 10.725 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 11.082 ; 11.082 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 10.725 ; 10.725 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 11.084 ; 11.084 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 11.098 ; 11.098 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 11.104 ; 11.104 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 11.106 ; 11.106 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 11.105 ; 11.105 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 13.271 ; 13.271 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 13.648 ; 13.648 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 13.271 ; 13.271 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 13.271 ; 13.271 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 13.282 ; 13.282 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 13.291 ; 13.291 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 13.654 ; 13.654 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 13.536 ; 13.536 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 15.303 ; 15.303 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 15.528 ; 15.528 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 15.303 ; 15.303 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 15.345 ; 15.345 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 15.346 ; 15.346 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 15.542 ; 15.542 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 15.650 ; 15.650 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 15.624 ; 15.624 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 14.915 ; 14.915 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 15.291 ; 15.291 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 15.234 ; 15.234 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 14.915 ; 14.915 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 15.295 ; 15.295 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 10.219 ; 10.219 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 10.219 ; 10.219 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 10.248 ; 10.248 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 10.585 ; 10.585 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 10.461 ; 10.461 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 10.616 ; 10.616 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 10.601 ; 10.601 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 10.608 ; 10.608 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 13.921 ; 13.921 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 13.921 ; 13.921 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 13.948 ; 13.948 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 13.945 ; 13.945 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 13.958 ; 13.958 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 13.963 ; 13.963 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 14.201 ; 14.201 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 14.330 ; 14.330 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 14.740 ; 14.740 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 14.740 ; 14.740 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 14.772 ; 14.772 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 14.796 ; 14.796 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 14.794 ; 14.794 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 14.775 ; 14.775 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 14.770 ; 14.770 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 15.043 ; 15.043 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 14.970 ; 14.970 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 15.009 ; 15.009 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 14.992 ; 14.992 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 14.970 ; 14.970 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 15.009 ; 15.009 ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -581,7 +581,7 @@ No paths to report.
 +--------+--------+---------------+
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
-; KEY[0] ; -2.009 ; -50.342       ;
+; KEY[0] ; -1.470 ; -41.320       ;
 +--------+--------+---------------+
 
 
@@ -590,7 +590,7 @@ No paths to report.
 +--------+-------+---------------+
 ; Clock  ; Slack ; End Point TNS ;
 +--------+-------+---------------+
-; KEY[0] ; 0.267 ; 0.000         ;
+; KEY[0] ; 0.215 ; 0.000         ;
 +--------+-------+---------------+
 
 
@@ -611,7 +611,7 @@ No paths to report.
 +--------+--------+----------------------+
 ; Clock  ; Slack  ; End Point TNS        ;
 +--------+--------+----------------------+
-; KEY[0] ; -1.222 ; -51.222              ;
+; KEY[0] ; -1.222 ; -55.222              ;
 +--------+--------+----------------------+
 
 
@@ -620,106 +620,106 @@ No paths to report.
 +--------+--------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -2.009 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 3.041      ;
-; -1.991 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.995      ;
-; -1.923 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.955      ;
-; -1.907 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.939      ;
-; -1.904 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.936      ;
-; -1.889 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.893      ;
-; -1.870 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.930      ;
-; -1.852 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.884      ;
-; -1.833 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.865      ;
-; -1.821 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.853      ;
-; -1.813 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.845      ;
-; -1.811 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.871      ;
-; -1.807 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.838      ;
-; -1.802 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.834      ;
-; -1.795 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.799      ;
-; -1.793 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.825      ;
-; -1.784 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.844      ;
-; -1.765 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.825      ;
-; -1.759 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.791      ;
-; -1.754 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.786      ;
-; -1.751 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.961      ;
-; -1.742 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.952      ;
-; -1.741 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.745      ;
-; -1.738 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.953      ;
-; -1.733 ; bo:operatorBlock|regX[0] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.764      ;
-; -1.733 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.150      ; 2.915      ;
-; -1.731 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.763      ;
-; -1.727 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.759      ;
-; -1.725 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.785      ;
-; -1.724 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.150      ; 2.906      ;
-; -1.720 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.155      ; 2.907      ;
-; -1.708 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.740      ;
-; -1.706 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.766      ;
-; -1.705 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.736      ;
-; -1.695 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.910      ;
-; -1.694 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.754      ;
-; -1.686 ; bo:operatorBlock|regX[1] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.717      ;
-; -1.677 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.155      ; 2.864      ;
-; -1.673 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.705      ;
-; -1.668 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.027      ; 2.727      ;
-; -1.665 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.875      ;
-; -1.658 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.718      ;
-; -1.657 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.717      ;
-; -1.656 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.866      ;
-; -1.654 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.686      ;
-; -1.653 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.685      ;
-; -1.652 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.867      ;
-; -1.652 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.684      ;
-; -1.648 ; bo:operatorBlock|regS[2] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.652      ;
-; -1.646 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.856      ;
-; -1.640 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.672      ;
-; -1.639 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.671      ;
-; -1.637 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.669      ;
-; -1.637 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.847      ;
-; -1.635 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.695      ;
-; -1.635 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.639      ;
-; -1.633 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.848      ;
-; -1.631 ; bo:operatorBlock|regX[0] ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.662      ;
-; -1.617 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.832      ;
-; -1.615 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.675      ;
-; -1.611 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.642      ;
-; -1.609 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.027      ; 2.668      ;
-; -1.609 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.824      ;
-; -1.599 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.155      ; 2.786      ;
-; -1.594 ; bo:operatorBlock|regX[0] ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.027      ; 2.653      ;
-; -1.590 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.805      ;
-; -1.584 ; bo:operatorBlock|regX[1] ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.615      ;
-; -1.583 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.615      ;
-; -1.575 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.785      ;
-; -1.572 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.632      ;
-; -1.571 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.631      ;
-; -1.569 ; bo:operatorBlock|regH[2] ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.573      ;
-; -1.567 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.599      ;
-; -1.566 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.178      ; 2.776      ;
-; -1.562 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.594      ;
-; -1.562 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.777      ;
-; -1.558 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.773      ;
-; -1.558 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.590      ;
-; -1.557 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.588      ;
-; -1.556 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.616      ;
-; -1.556 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.616      ;
-; -1.555 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.615      ;
-; -1.553 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.613      ;
-; -1.552 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.612      ;
-; -1.549 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.177      ; 2.758      ;
-; -1.548 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.580      ;
-; -1.547 ; bo:operatorBlock|regX[1] ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.027      ; 2.606      ;
-; -1.546 ; bo:operatorBlock|regS[2] ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.550      ;
-; -1.545 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.577      ;
-; -1.544 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.028     ; 2.548      ;
-; -1.540 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.177      ; 2.749      ;
-; -1.540 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.155      ; 2.727      ;
-; -1.538 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.570      ;
-; -1.538 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.570      ;
-; -1.537 ; bo:operatorBlock|regX[0] ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.001     ; 2.568      ;
-; -1.537 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.569      ;
-; -1.536 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.028      ; 2.596      ;
-; -1.536 ; bo:operatorBlock|regX[2] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.182      ; 2.750      ;
-; -1.535 ; bo:operatorBlock|regX[0] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.027      ; 2.594      ;
-; -1.531 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.183      ; 2.746      ;
+; -1.470 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.620      ;
+; -1.452 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.602      ;
+; -1.433 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.465      ;
+; -1.430 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.472      ;
+; -1.413 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.455      ;
+; -1.408 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.440      ;
+; -1.402 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.552      ;
+; -1.397 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.547      ;
+; -1.389 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.539      ;
+; -1.384 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.534      ;
+; -1.365 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.397      ;
+; -1.362 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.404      ;
+; -1.360 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.467      ;
+; -1.358 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.466      ;
+; -1.345 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.387      ;
+; -1.342 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.449      ;
+; -1.340 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.372      ;
+; -1.340 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.448      ;
+; -1.334 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.441      ;
+; -1.329 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.479      ;
+; -1.328 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.436      ;
+; -1.323 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.312      ;
+; -1.321 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.471      ;
+; -1.321 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.042     ; 2.311      ;
+; -1.320 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.319      ;
+; -1.319 ; bo:operatorBlock|regH[2] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.351      ;
+; -1.318 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.032     ; 2.318      ;
+; -1.316 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.423      ;
+; -1.310 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.418      ;
+; -1.303 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.453      ;
+; -1.303 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.302      ;
+; -1.302 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.452      ;
+; -1.301 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.032     ; 2.301      ;
+; -1.298 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.287      ;
+; -1.297 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.286      ;
+; -1.296 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.042     ; 2.286      ;
+; -1.294 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.293      ;
+; -1.291 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.398      ;
+; -1.291 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.042     ; 2.281      ;
+; -1.288 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.032     ; 2.288      ;
+; -1.287 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.394      ;
+; -1.285 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.435      ;
+; -1.285 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.393      ;
+; -1.284 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.434      ;
+; -1.279 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.386      ;
+; -1.277 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.385      ;
+; -1.277 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.276      ;
+; -1.273 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.380      ;
+; -1.272 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.261      ;
+; -1.271 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.032     ; 2.271      ;
+; -1.267 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.417      ;
+; -1.266 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.042     ; 2.256      ;
+; -1.266 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.298      ;
+; -1.265 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.297      ;
+; -1.263 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.305      ;
+; -1.262 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.304      ;
+; -1.261 ; bo:operatorBlock|regX[3] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.111      ; 2.404      ;
+; -1.261 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.368      ;
+; -1.255 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.363      ;
+; -1.254 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.243      ;
+; -1.253 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.360      ;
+; -1.251 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.060      ; 2.343      ;
+; -1.251 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.250      ;
+; -1.251 ; bo:operatorBlock|regH[2] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.283      ;
+; -1.247 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.355      ;
+; -1.246 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.288      ;
+; -1.245 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.395      ;
+; -1.245 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.287      ;
+; -1.244 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.394      ;
+; -1.241 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.273      ;
+; -1.240 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.272      ;
+; -1.239 ; bo:operatorBlock|regH[0] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.032      ; 2.303      ;
+; -1.238 ; bo:operatorBlock|regS[4] ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.042      ; 2.312      ;
+; -1.234 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.033     ; 2.233      ;
+; -1.233 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.060      ; 2.325      ;
+; -1.230 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.380      ;
+; -1.229 ; bo:operatorBlock|regH[4] ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.218      ;
+; -1.229 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.379      ;
+; -1.227 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.377      ;
+; -1.226 ; bc:comandBlock|M0[0]     ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.376      ;
+; -1.222 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.372      ;
+; -1.221 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.371      ;
+; -1.218 ; bc:comandBlock|M1[1]     ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.325      ;
+; -1.214 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.058     ; 2.188      ;
+; -1.211 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.048     ; 2.195      ;
+; -1.210 ; bc:comandBlock|M1[0]     ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.075      ; 2.317      ;
+; -1.209 ; bo:operatorBlock|regH[2] ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.043     ; 2.198      ;
+; -1.208 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.240      ;
+; -1.207 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.357      ;
+; -1.207 ; bo:operatorBlock|regH[3] ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.000      ; 2.239      ;
+; -1.207 ; bo:operatorBlock|regH[2] ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.042     ; 2.197      ;
+; -1.206 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.356      ;
+; -1.205 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.247      ;
+; -1.204 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.076      ; 2.312      ;
+; -1.204 ; bo:operatorBlock|regS[0] ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.010      ; 2.246      ;
+; -1.199 ; bc:comandBlock|M2[1]     ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.349      ;
+; -1.194 ; bo:operatorBlock|regS[1] ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.048     ; 2.178      ;
+; -1.193 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.343      ;
+; -1.193 ; bo:operatorBlock|regX[3] ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.111      ; 2.336      ;
+; -1.192 ; bc:comandBlock|M0[1]     ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.118      ; 2.342      ;
 +--------+--------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -728,106 +728,106 @@ No paths to report.
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; 0.267 ; bc:comandBlock|state.0001 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.420      ;
-; 0.317 ; bc:comandBlock|state.0011 ; bc:comandBlock|state.0100 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.469      ;
-; 0.364 ; bc:comandBlock|state.0110 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.516      ;
-; 0.368 ; bc:comandBlock|state.0100 ; bc:comandBlock|state.0101 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.520      ;
-; 0.368 ; bc:comandBlock|state.0101 ; bc:comandBlock|state.0110 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.520      ;
-; 0.369 ; bc:comandBlock|state.0001 ; bc:comandBlock|state.0010 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.521      ;
-; 0.376 ; bc:comandBlock|state.0010 ; bc:comandBlock|state.0011 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.528      ;
-; 0.390 ; bc:comandBlock|H          ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.720      ;
-; 0.495 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 0.958      ;
-; 0.495 ; bc:comandBlock|state.0101 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 0.958      ;
-; 0.495 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 0.958      ;
-; 0.511 ; bc:comandBlock|H          ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.846      ;
-; 0.514 ; bc:comandBlock|H          ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.844      ;
-; 0.515 ; bc:comandBlock|H          ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.845      ;
-; 0.520 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.855      ;
-; 0.520 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.855      ;
-; 0.520 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.855      ;
-; 0.520 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.855      ;
-; 0.520 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.855      ;
-; 0.531 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.861      ;
-; 0.531 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.861      ;
-; 0.531 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.861      ;
-; 0.531 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.861      ;
-; 0.531 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 0.861      ;
-; 0.538 ; bc:comandBlock|state.0100 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.001      ;
-; 0.601 ; bc:comandBlock|state.0110 ; bc:comandBlock|M0[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.064      ;
-; 0.611 ; bc:comandBlock|state.0010 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.074      ;
-; 0.631 ; bc:comandBlock|state.0001 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.094      ;
-; 0.634 ; bc:comandBlock|state.0011 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.097      ;
-; 0.634 ; bc:comandBlock|state.0001 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.097      ;
-; 0.636 ; bc:comandBlock|H          ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 0.971      ;
-; 0.637 ; bc:comandBlock|state.0001 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.100      ;
-; 0.639 ; bc:comandBlock|state.0001 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.102      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.671 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.851      ;
-; 0.672 ; bc:comandBlock|state.0011 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.135      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.673 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 0.853      ;
-; 0.676 ; bc:comandBlock|state.0011 ; bc:comandBlock|M0[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.139      ;
-; 0.679 ; bc:comandBlock|state.0011 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.142      ;
-; 0.679 ; bc:comandBlock|state.0010 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.142      ;
-; 0.684 ; bc:comandBlock|state.0010 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.147      ;
-; 0.686 ; bc:comandBlock|state.0110 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.149      ;
-; 0.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.843      ;
-; 0.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.843      ;
-; 0.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.843      ;
-; 0.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.843      ;
-; 0.691 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.843      ;
-; 0.764 ; bc:comandBlock|H          ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.099      ;
-; 0.783 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.935      ;
-; 0.783 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.935      ;
-; 0.783 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.935      ;
-; 0.783 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.935      ;
-; 0.783 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.935      ;
-; 0.783 ; bo:operatorBlock|regH[15] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.005      ; 0.940      ;
-; 0.841 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.304      ;
-; 0.841 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.304      ;
-; 0.841 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.311      ; 1.304      ;
-; 0.841 ; bc:comandBlock|H          ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.176      ;
-; 0.852 ; bc:comandBlock|H          ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.187      ;
-; 0.853 ; bc:comandBlock|H          ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 1.183      ;
-; 0.856 ; bc:comandBlock|H          ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 1.186      ;
-; 0.874 ; bc:comandBlock|H          ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 1.054      ;
-; 0.878 ; bc:comandBlock|H          ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 1.058      ;
-; 0.880 ; bc:comandBlock|H          ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.028      ; 1.060      ;
-; 0.880 ; bc:comandBlock|M1[1]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.215      ;
-; 0.905 ; bc:comandBlock|H          ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.057      ;
-; 0.907 ; bc:comandBlock|H          ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.059      ;
-; 0.908 ; bc:comandBlock|H          ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.060      ;
-; 0.908 ; bc:comandBlock|H          ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.060      ;
-; 0.909 ; bc:comandBlock|H          ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.061      ;
-; 0.932 ; bo:operatorBlock|regS[15] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.084      ;
-; 0.959 ; bc:comandBlock|M1[0]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.294      ;
-; 0.998 ; bo:operatorBlock|regS[8]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 1.328      ;
-; 0.999 ; bo:operatorBlock|regS[7]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 1.329      ;
-; 1.016 ; bc:comandBlock|M2[1]      ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.183      ; 1.351      ;
-; 1.018 ; bo:operatorBlock|regH[1]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.320      ;
-; 1.022 ; bo:operatorBlock|regS[2]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.324      ;
-; 1.023 ; bo:operatorBlock|regH[0]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.325      ;
-; 1.023 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.325      ;
-; 1.040 ; bc:comandBlock|M2[1]      ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.178      ; 1.370      ;
-; 1.047 ; bo:operatorBlock|regS[9]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.349      ;
-; 1.047 ; bo:operatorBlock|regX[1]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.177      ; 1.376      ;
-; 1.067 ; bo:operatorBlock|regS[4]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.369      ;
-; 1.070 ; bo:operatorBlock|regS[11] ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.005     ; 1.217      ;
-; 1.072 ; bc:comandBlock|H          ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.224      ;
-; 1.072 ; bo:operatorBlock|regH[9]  ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.374      ;
-; 1.074 ; bo:operatorBlock|regS[12] ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.005     ; 1.221      ;
-; 1.081 ; bo:operatorBlock|regS[1]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.383      ;
-; 1.084 ; bo:operatorBlock|regH[13] ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.005      ; 1.241      ;
-; 1.085 ; bo:operatorBlock|regS[5]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.387      ;
-; 1.096 ; bo:operatorBlock|regS[9]  ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.150      ; 1.398      ;
+; 0.215 ; bc:comandBlock|LS         ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; bc:comandBlock|flag       ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; bc:comandBlock|LX         ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.367      ;
+; 0.248 ; bc:comandBlock|state.0011 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.401      ;
+; 0.361 ; bc:comandBlock|state.0001 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.514      ;
+; 0.364 ; bc:comandBlock|state.0001 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.517      ;
+; 0.374 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.107      ; 0.633      ;
+; 0.389 ; bc:comandBlock|state.0000 ; bc:comandBlock|LS         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.542      ;
+; 0.389 ; bc:comandBlock|state.0000 ; bc:comandBlock|LX         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.542      ;
+; 0.390 ; bc:comandBlock|state.0000 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.542      ;
+; 0.423 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.086      ; 0.661      ;
+; 0.423 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.086      ; 0.661      ;
+; 0.423 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.086      ; 0.661      ;
+; 0.437 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.123      ; 0.712      ;
+; 0.439 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.123      ; 0.714      ;
+; 0.441 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.123      ; 0.716      ;
+; 0.489 ; bc:comandBlock|H          ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.082      ; 0.723      ;
+; 0.490 ; bc:comandBlock|H          ; bo:operatorBlock|regH[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.093      ; 0.735      ;
+; 0.491 ; bc:comandBlock|H          ; bo:operatorBlock|regH[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.093      ; 0.736      ;
+; 0.492 ; bc:comandBlock|H          ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.082      ; 0.726      ;
+; 0.493 ; bc:comandBlock|H          ; bo:operatorBlock|regH[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.093      ; 0.738      ;
+; 0.494 ; bc:comandBlock|H          ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.082      ; 0.728      ;
+; 0.507 ; bc:comandBlock|H          ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.067      ; 0.726      ;
+; 0.581 ; bc:comandBlock|state.0011 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.734      ;
+; 0.582 ; bc:comandBlock|state.0001 ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.039     ; 0.695      ;
+; 0.586 ; bc:comandBlock|H          ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 0.738      ;
+; 0.604 ; bc:comandBlock|state.0000 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.001      ; 0.757      ;
+; 0.609 ; bc:comandBlock|state.0111 ; bc:comandBlock|state.0001 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.257      ; 1.018      ;
+; 0.617 ; bc:comandBlock|state.0010 ; bc:comandBlock|state.0011 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.257      ; 1.026      ;
+; 0.624 ; bc:comandBlock|state.0100 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.258      ; 1.034      ;
+; 0.701 ; bc:comandBlock|state.0101 ; bc:comandBlock|state.0110 ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.218      ; 1.071      ;
+; 0.703 ; bc:comandBlock|state.0111 ; bc:comandBlock|flag       ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.218      ; 1.073      ;
+; 0.737 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.054      ;
+; 0.737 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.054      ;
+; 0.742 ; bc:comandBlock|H          ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.019      ;
+; 0.742 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.067      ; 0.961      ;
+; 0.743 ; bc:comandBlock|H          ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.020      ;
+; 0.744 ; bc:comandBlock|H          ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.021      ;
+; 0.763 ; bc:comandBlock|H          ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 0.998      ;
+; 0.764 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.071      ;
+; 0.764 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.071      ;
+; 0.764 ; bc:comandBlock|H          ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 0.999      ;
+; 0.765 ; bc:comandBlock|state.0011 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 0.925      ;
+; 0.766 ; bc:comandBlock|H          ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 1.001      ;
+; 0.769 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.075      ; 0.996      ;
+; 0.769 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.075      ; 0.996      ;
+; 0.769 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.075      ; 0.996      ;
+; 0.781 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.098      ;
+; 0.782 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.099      ;
+; 0.810 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 1.045      ;
+; 0.810 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[9]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 1.045      ;
+; 0.810 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[10] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.083      ; 1.045      ;
+; 0.812 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.129      ;
+; 0.815 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.165      ; 1.132      ;
+; 0.820 ; bc:comandBlock|state.0000 ; bc:comandBlock|M0[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 0.980      ;
+; 0.820 ; bc:comandBlock|state.0000 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 0.980      ;
+; 0.823 ; bc:comandBlock|state.0000 ; bc:comandBlock|LH         ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 0.983      ;
+; 0.829 ; bc:comandBlock|state.0000 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 0.989      ;
+; 0.830 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.137      ;
+; 0.832 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.139      ;
+; 0.833 ; bc:comandBlock|state.0010 ; bc:comandBlock|H          ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.258      ; 1.243      ;
+; 0.838 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.145      ;
+; 0.842 ; bc:comandBlock|flag       ; bo:operatorBlock|regS[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.155      ; 1.149      ;
+; 0.855 ; bc:comandBlock|H          ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.132      ;
+; 0.855 ; bc:comandBlock|H          ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.132      ;
+; 0.857 ; bc:comandBlock|H          ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.134      ;
+; 0.862 ; bc:comandBlock|H          ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.139      ;
+; 0.862 ; bc:comandBlock|H          ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.139      ;
+; 0.864 ; bc:comandBlock|H          ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.141      ;
+; 0.889 ; bc:comandBlock|state.0011 ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 1.049      ;
+; 0.891 ; bc:comandBlock|state.0000 ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.008      ; 1.051      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[4]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[6]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[13] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[14] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.894 ; bc:comandBlock|LH         ; bo:operatorBlock|regH[15] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.118      ; 1.164      ;
+; 0.901 ; bc:comandBlock|M2[1]      ; bc:comandBlock|M2[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.053      ;
+; 0.905 ; bc:comandBlock|M1[1]      ; bc:comandBlock|M1[1]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.000      ; 1.057      ;
+; 0.961 ; bo:operatorBlock|regX[0]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.111      ; 1.224      ;
+; 0.961 ; bo:operatorBlock|regX[0]  ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.111      ; 1.224      ;
+; 0.962 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regH[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.111      ; 1.225      ;
+; 0.962 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.111      ; 1.225      ;
+; 0.966 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[2]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.014      ; 1.132      ;
+; 0.966 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[1]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.014      ; 1.132      ;
+; 0.966 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[0]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.014      ; 1.132      ;
+; 0.966 ; bc:comandBlock|LX         ; bo:operatorBlock|regX[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.014      ; 1.132      ;
+; 0.977 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regH[3]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.111      ; 1.240      ;
+; 0.979 ; bo:operatorBlock|regX[0]  ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.101      ; 1.232      ;
+; 0.980 ; bo:operatorBlock|regX[0]  ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.101      ; 1.233      ;
+; 0.980 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regS[5]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.101      ; 1.233      ;
+; 0.981 ; bo:operatorBlock|regX[3]  ; bo:operatorBlock|regS[7]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.101      ; 1.234      ;
+; 0.984 ; bc:comandBlock|state.0101 ; bc:comandBlock|M1[0]      ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.265      ; 1.401      ;
+; 0.997 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[8]  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.274      ;
+; 0.997 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[11] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.274      ;
+; 0.997 ; bc:comandBlock|LS         ; bo:operatorBlock|regS[12] ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.125      ; 1.274      ;
 +-------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -855,6 +855,10 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|M1[1]      ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|M2[1]      ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|M2[1]      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|flag       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|flag       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0000 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0000 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0001 ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0001 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0010 ;
@@ -867,6 +871,8 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0101 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0110 ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0110 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bc:comandBlock|state.0111 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bc:comandBlock|state.0111 ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regH[0]  ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regH[0]  ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regH[10] ;
@@ -930,12 +936,6 @@ No paths to report.
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regS[8]  ;
 ; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regS[8]  ;
 ; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regS[9]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regS[9]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[0]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regX[0]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[1]  ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; KEY[0] ; Rise       ; bo:operatorBlock|regX[1]  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; KEY[0] ; Rise       ; bo:operatorBlock|regX[2]  ;
 +--------+--------------+----------------+------------------+--------+------------+---------------------------+
 
 
@@ -944,27 +944,27 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; 2.528  ; 2.528  ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; 2.528  ; 2.528  ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; -0.125 ; -0.125 ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; -0.127 ; -0.127 ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; -0.205 ; -0.205 ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; -0.125 ; -0.125 ; Rise       ; KEY[0]          ;
+; SW[*]     ; KEY[0]     ; 1.083  ; 1.083  ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.252 ; -0.252 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; -0.109 ; -0.109 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.256 ; -0.256 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -0.329 ; -0.329 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 1.083  ; 1.083  ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Hold Times                                                              ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; -2.137 ; -2.137 ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; -2.137 ; -2.137 ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; 0.325  ; 0.325  ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; 0.247  ; 0.247  ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; 0.325  ; 0.325  ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; 0.245  ; 0.245  ; Rise       ; KEY[0]          ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 0.449 ; 0.449 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 0.372 ; 0.372 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.229 ; 0.229 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.376 ; 0.376 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 0.449 ; 0.449 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 0.165 ; 0.165 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------------+
@@ -972,35 +972,35 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 12.412 ; 12.412 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 12.376 ; 12.376 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 12.248 ; 12.248 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 12.394 ; 12.394 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 12.399 ; 12.399 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 12.412 ; 12.412 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 12.410 ; 12.410 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 12.412 ; 12.412 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 12.234 ; 12.234 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 12.226 ; 12.226 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 12.064 ; 12.064 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 12.065 ; 12.065 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 12.072 ; 12.072 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 12.084 ; 12.084 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 12.234 ; 12.234 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 12.176 ; 12.176 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 11.708 ; 11.708 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 11.635 ; 11.635 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 11.556 ; 11.556 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 11.599 ; 11.599 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 11.600 ; 11.600 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 11.648 ; 11.648 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 11.693 ; 11.693 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 11.708 ; 11.708 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 10.792 ; 10.792 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 10.787 ; 10.787 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 10.749 ; 10.749 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 10.625 ; 10.625 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 10.792 ; 10.792 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 12.268 ; 12.268 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 12.086 ; 12.086 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 12.121 ; 12.121 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 12.253 ; 12.253 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 12.198 ; 12.198 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 12.265 ; 12.265 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 12.268 ; 12.268 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 12.262 ; 12.262 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 12.819 ; 12.819 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 12.460 ; 12.460 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 12.654 ; 12.654 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 12.653 ; 12.653 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 12.660 ; 12.660 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 12.667 ; 12.667 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 12.760 ; 12.760 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 12.819 ; 12.819 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 12.248 ; 12.248 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 12.100 ; 12.100 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 12.120 ; 12.120 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 12.145 ; 12.145 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 12.153 ; 12.153 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 12.133 ; 12.133 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 12.118 ; 12.118 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 12.248 ; 12.248 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 11.298 ; 11.298 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 11.297 ; 11.297 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 11.282 ; 11.282 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 11.261 ; 11.261 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 11.298 ; 11.298 ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1009,35 +1009,35 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 4.952 ; 4.952 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 4.976 ; 4.976 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 4.981 ; 4.981 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 4.994 ; 4.994 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 4.992 ; 4.992 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 4.995 ; 4.995 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 5.820 ; 5.820 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 5.988 ; 5.988 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 5.821 ; 5.821 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 5.820 ; 5.820 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 5.833 ; 5.833 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 5.862 ; 5.862 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 5.988 ; 5.988 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 5.937 ; 5.937 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 6.448 ; 6.448 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 6.527 ; 6.527 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 6.448 ; 6.448 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 6.491 ; 6.491 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 6.492 ; 6.492 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 6.540 ; 6.540 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 6.585 ; 6.585 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 6.600 ; 6.600 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 6.265 ; 6.265 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 6.427 ; 6.427 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 6.389 ; 6.389 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 6.265 ; 6.265 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 6.432 ; 6.432 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 4.651 ; 4.651 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 4.651 ; 4.651 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 4.680 ; 4.680 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 4.803 ; 4.803 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 4.747 ; 4.747 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 4.832 ; 4.832 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 4.820 ; 4.820 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 5.961 ; 5.961 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 5.965 ; 5.965 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 5.963 ; 5.963 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 5.961 ; 5.961 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 5.973 ; 5.973 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 5.978 ; 5.978 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 6.068 ; 6.068 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 6.131 ; 6.131 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 6.215 ; 6.215 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 6.215 ; 6.215 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 6.235 ; 6.235 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 6.267 ; 6.267 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 6.264 ; 6.264 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 6.246 ; 6.246 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 6.241 ; 6.241 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 6.360 ; 6.360 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 6.277 ; 6.277 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 6.313 ; 6.313 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 6.298 ; 6.298 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 6.277 ; 6.277 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 6.314 ; 6.314 ; Rise       ; KEY[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1046,10 +1046,10 @@ No paths to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -7.371   ; 0.267 ; N/A      ; N/A     ; -1.469              ;
-;  KEY[0]          ; -7.371   ; 0.267 ; N/A      ; N/A     ; -1.469              ;
-; Design-wide TNS  ; -232.254 ; 0.0   ; 0.0      ; 0.0     ; -62.569             ;
-;  KEY[0]          ; -232.254 ; 0.000 ; N/A      ; N/A     ; -62.569             ;
+; Worst-case Slack ; -6.698   ; 0.215 ; N/A      ; N/A     ; -1.469              ;
+;  KEY[0]          ; -6.698   ; 0.215 ; N/A      ; N/A     ; -1.469              ;
+; Design-wide TNS  ; -248.334 ; 0.0   ; 0.0      ; 0.0     ; -67.457             ;
+;  KEY[0]          ; -248.334 ; 0.000 ; N/A      ; N/A     ; -67.457             ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -1058,27 +1058,27 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; 4.540  ; 4.540  ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; 4.540  ; 4.540  ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; -0.035 ; -0.035 ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; -0.035 ; -0.035 ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; -0.205 ; -0.205 ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; -0.077 ; -0.077 ; Rise       ; KEY[0]          ;
+; SW[*]     ; KEY[0]     ; 2.853  ; 2.853  ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; -0.252 ; -0.252 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.050  ; 0.050  ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; -0.256 ; -0.256 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; -0.329 ; -0.329 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 2.853  ; 2.853  ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Hold Times                                                              ;
-+-----------+------------+--------+--------+------------+-----------------+
-; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
-+-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; KEY[0]     ; -2.137 ; -2.137 ; Rise       ; KEY[0]          ;
-;  KEY[2]   ; KEY[0]     ; -2.137 ; -2.137 ; Rise       ; KEY[0]          ;
-; SW[*]     ; KEY[0]     ; 0.565  ; 0.565  ; Rise       ; KEY[0]          ;
-;  SW[0]    ; KEY[0]     ; 0.283  ; 0.283  ; Rise       ; KEY[0]          ;
-;  SW[1]    ; KEY[0]     ; 0.565  ; 0.565  ; Rise       ; KEY[0]          ;
-;  SW[2]    ; KEY[0]     ; 0.325  ; 0.325  ; Rise       ; KEY[0]          ;
-+-----------+------------+--------+--------+------------+-----------------+
++-----------------------------------------------------------------------+
+; Hold Times                                                            ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; SW[*]     ; KEY[0]     ; 0.790 ; 0.790 ; Rise       ; KEY[0]          ;
+;  SW[0]    ; KEY[0]     ; 0.652 ; 0.652 ; Rise       ; KEY[0]          ;
+;  SW[1]    ; KEY[0]     ; 0.229 ; 0.229 ; Rise       ; KEY[0]          ;
+;  SW[2]    ; KEY[0]     ; 0.664 ; 0.664 ; Rise       ; KEY[0]          ;
+;  SW[3]    ; KEY[0]     ; 0.790 ; 0.790 ; Rise       ; KEY[0]          ;
+;  SW[9]    ; KEY[0]     ; 0.165 ; 0.165 ; Rise       ; KEY[0]          ;
++-----------+------------+-------+-------+------------+-----------------+
 
 
 +-------------------------------------------------------------------------+
@@ -1086,35 +1086,35 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 31.578 ; 31.578 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 31.221 ; 31.221 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 31.579 ; 31.579 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 31.593 ; 31.593 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 31.600 ; 31.600 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 31.601 ; 31.601 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 31.223 ; 31.223 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 31.213 ; 31.213 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 30.838 ; 30.838 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 30.840 ; 30.840 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 30.847 ; 30.847 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 30.858 ; 30.858 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 31.223 ; 31.223 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 31.099 ; 31.099 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 29.818 ; 29.818 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 29.696 ; 29.696 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 29.471 ; 29.471 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 29.513 ; 29.513 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 29.514 ; 29.514 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 29.710 ; 29.710 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 29.818 ; 29.818 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 29.792 ; 29.792 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 27.266 ; 27.266 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 27.262 ; 27.262 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 27.205 ; 27.205 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 26.886 ; 26.886 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 27.266 ; 27.266 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 31.266 ; 31.266 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 30.870 ; 30.870 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 30.902 ; 30.902 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 31.246 ; 31.246 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 31.129 ; 31.129 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 31.265 ; 31.265 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 31.266 ; 31.266 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 31.260 ; 31.260 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 32.756 ; 32.756 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 31.800 ; 31.800 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 32.374 ; 32.374 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 32.369 ; 32.369 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 32.383 ; 32.383 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 32.387 ; 32.387 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 32.629 ; 32.629 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 32.756 ; 32.756 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 31.125 ; 31.125 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 30.780 ; 30.780 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 30.808 ; 30.808 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 30.825 ; 30.825 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 30.835 ; 30.835 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 30.815 ; 30.815 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 30.799 ; 30.799 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 31.125 ; 31.125 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 28.475 ; 28.475 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 28.453 ; 28.453 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 28.492 ; 28.492 ; Rise       ; KEY[0]          ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1123,35 +1123,35 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
-;  HEX0[0]  ; KEY[0]     ; 4.952 ; 4.952 ; Rise       ; KEY[0]          ;
-;  HEX0[1]  ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
-;  HEX0[2]  ; KEY[0]     ; 4.976 ; 4.976 ; Rise       ; KEY[0]          ;
-;  HEX0[3]  ; KEY[0]     ; 4.981 ; 4.981 ; Rise       ; KEY[0]          ;
-;  HEX0[4]  ; KEY[0]     ; 4.994 ; 4.994 ; Rise       ; KEY[0]          ;
-;  HEX0[5]  ; KEY[0]     ; 4.992 ; 4.992 ; Rise       ; KEY[0]          ;
-;  HEX0[6]  ; KEY[0]     ; 4.995 ; 4.995 ; Rise       ; KEY[0]          ;
-; HEX1[*]   ; KEY[0]     ; 5.820 ; 5.820 ; Rise       ; KEY[0]          ;
-;  HEX1[0]  ; KEY[0]     ; 5.988 ; 5.988 ; Rise       ; KEY[0]          ;
-;  HEX1[1]  ; KEY[0]     ; 5.821 ; 5.821 ; Rise       ; KEY[0]          ;
-;  HEX1[2]  ; KEY[0]     ; 5.820 ; 5.820 ; Rise       ; KEY[0]          ;
-;  HEX1[3]  ; KEY[0]     ; 5.833 ; 5.833 ; Rise       ; KEY[0]          ;
-;  HEX1[4]  ; KEY[0]     ; 5.862 ; 5.862 ; Rise       ; KEY[0]          ;
-;  HEX1[5]  ; KEY[0]     ; 5.988 ; 5.988 ; Rise       ; KEY[0]          ;
-;  HEX1[6]  ; KEY[0]     ; 5.937 ; 5.937 ; Rise       ; KEY[0]          ;
-; HEX2[*]   ; KEY[0]     ; 6.448 ; 6.448 ; Rise       ; KEY[0]          ;
-;  HEX2[0]  ; KEY[0]     ; 6.527 ; 6.527 ; Rise       ; KEY[0]          ;
-;  HEX2[1]  ; KEY[0]     ; 6.448 ; 6.448 ; Rise       ; KEY[0]          ;
-;  HEX2[2]  ; KEY[0]     ; 6.491 ; 6.491 ; Rise       ; KEY[0]          ;
-;  HEX2[3]  ; KEY[0]     ; 6.492 ; 6.492 ; Rise       ; KEY[0]          ;
-;  HEX2[4]  ; KEY[0]     ; 6.540 ; 6.540 ; Rise       ; KEY[0]          ;
-;  HEX2[5]  ; KEY[0]     ; 6.585 ; 6.585 ; Rise       ; KEY[0]          ;
-;  HEX2[6]  ; KEY[0]     ; 6.600 ; 6.600 ; Rise       ; KEY[0]          ;
-; HEX3[*]   ; KEY[0]     ; 6.265 ; 6.265 ; Rise       ; KEY[0]          ;
-;  HEX3[0]  ; KEY[0]     ; 6.427 ; 6.427 ; Rise       ; KEY[0]          ;
-;  HEX3[3]  ; KEY[0]     ; 6.389 ; 6.389 ; Rise       ; KEY[0]          ;
-;  HEX3[4]  ; KEY[0]     ; 6.265 ; 6.265 ; Rise       ; KEY[0]          ;
-;  HEX3[5]  ; KEY[0]     ; 6.432 ; 6.432 ; Rise       ; KEY[0]          ;
+; HEX0[*]   ; KEY[0]     ; 4.651 ; 4.651 ; Rise       ; KEY[0]          ;
+;  HEX0[0]  ; KEY[0]     ; 4.651 ; 4.651 ; Rise       ; KEY[0]          ;
+;  HEX0[1]  ; KEY[0]     ; 4.680 ; 4.680 ; Rise       ; KEY[0]          ;
+;  HEX0[2]  ; KEY[0]     ; 4.803 ; 4.803 ; Rise       ; KEY[0]          ;
+;  HEX0[3]  ; KEY[0]     ; 4.747 ; 4.747 ; Rise       ; KEY[0]          ;
+;  HEX0[4]  ; KEY[0]     ; 4.832 ; 4.832 ; Rise       ; KEY[0]          ;
+;  HEX0[5]  ; KEY[0]     ; 4.820 ; 4.820 ; Rise       ; KEY[0]          ;
+;  HEX0[6]  ; KEY[0]     ; 4.828 ; 4.828 ; Rise       ; KEY[0]          ;
+; HEX1[*]   ; KEY[0]     ; 5.961 ; 5.961 ; Rise       ; KEY[0]          ;
+;  HEX1[0]  ; KEY[0]     ; 5.965 ; 5.965 ; Rise       ; KEY[0]          ;
+;  HEX1[1]  ; KEY[0]     ; 5.963 ; 5.963 ; Rise       ; KEY[0]          ;
+;  HEX1[2]  ; KEY[0]     ; 5.961 ; 5.961 ; Rise       ; KEY[0]          ;
+;  HEX1[3]  ; KEY[0]     ; 5.973 ; 5.973 ; Rise       ; KEY[0]          ;
+;  HEX1[4]  ; KEY[0]     ; 5.978 ; 5.978 ; Rise       ; KEY[0]          ;
+;  HEX1[5]  ; KEY[0]     ; 6.068 ; 6.068 ; Rise       ; KEY[0]          ;
+;  HEX1[6]  ; KEY[0]     ; 6.131 ; 6.131 ; Rise       ; KEY[0]          ;
+; HEX2[*]   ; KEY[0]     ; 6.215 ; 6.215 ; Rise       ; KEY[0]          ;
+;  HEX2[0]  ; KEY[0]     ; 6.215 ; 6.215 ; Rise       ; KEY[0]          ;
+;  HEX2[1]  ; KEY[0]     ; 6.235 ; 6.235 ; Rise       ; KEY[0]          ;
+;  HEX2[2]  ; KEY[0]     ; 6.267 ; 6.267 ; Rise       ; KEY[0]          ;
+;  HEX2[3]  ; KEY[0]     ; 6.264 ; 6.264 ; Rise       ; KEY[0]          ;
+;  HEX2[4]  ; KEY[0]     ; 6.246 ; 6.246 ; Rise       ; KEY[0]          ;
+;  HEX2[5]  ; KEY[0]     ; 6.241 ; 6.241 ; Rise       ; KEY[0]          ;
+;  HEX2[6]  ; KEY[0]     ; 6.360 ; 6.360 ; Rise       ; KEY[0]          ;
+; HEX3[*]   ; KEY[0]     ; 6.277 ; 6.277 ; Rise       ; KEY[0]          ;
+;  HEX3[0]  ; KEY[0]     ; 6.313 ; 6.313 ; Rise       ; KEY[0]          ;
+;  HEX3[3]  ; KEY[0]     ; 6.298 ; 6.298 ; Rise       ; KEY[0]          ;
+;  HEX3[4]  ; KEY[0]     ; 6.277 ; 6.277 ; Rise       ; KEY[0]          ;
+;  HEX3[5]  ; KEY[0]     ; 6.314 ; 6.314 ; Rise       ; KEY[0]          ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1160,7 +1160,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; KEY[0]     ; KEY[0]   ; 4199     ; 0        ; 0        ; 0        ;
+; KEY[0]     ; KEY[0]   ; 4466     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1170,7 +1170,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; KEY[0]     ; KEY[0]   ; 4199     ; 0        ; 0        ; 0        ;
+; KEY[0]     ; KEY[0]   ; 4466     ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1194,8 +1194,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 18    ; 18   ;
+; Unconstrained Input Ports       ; 5     ; 5    ;
+; Unconstrained Input Port Paths  ; 22    ; 22   ;
 ; Unconstrained Output Ports      ; 25    ; 25   ;
 ; Unconstrained Output Port Paths ; 217   ; 217  ;
 +---------------------------------+-------+------+
@@ -1207,7 +1207,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Jan 31 21:53:31 2023
+    Info: Processing started: Tue Feb 07 21:45:56 2023
 Info: Command: quartus_sta Tarefa4 -c Tarefa4
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1220,44 +1220,44 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -7.371
+Info (332146): Worst-case setup slack is -6.698
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -7.371      -232.254 KEY[0] 
-Info (332146): Worst-case hold slack is 0.634
+    Info (332119):    -6.698      -248.334 KEY[0] 
+Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.634         0.000 KEY[0] 
+    Info (332119):     0.445         0.000 KEY[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.469
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.469       -62.569 KEY[0] 
+    Info (332119):    -1.469       -67.457 KEY[0] 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.009
+Info (332146): Worst-case setup slack is -1.470
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -2.009       -50.342 KEY[0] 
-Info (332146): Worst-case hold slack is 0.267
+    Info (332119):    -1.470       -41.320 KEY[0] 
+Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     0.267         0.000 KEY[0] 
+    Info (332119):     0.215         0.000 KEY[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.222
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -1.222       -51.222 KEY[0] 
+    Info (332119):    -1.222       -55.222 KEY[0] 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4550 megabytes
-    Info: Processing ended: Tue Jan 31 21:53:32 2023
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4539 megabytes
+    Info: Processing ended: Tue Feb 07 21:45:56 2023
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

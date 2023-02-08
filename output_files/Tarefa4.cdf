@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("C:/Users/aluno/Downloads/Tarefa4 - 2121101016 e 2121101043 (1)/Tarefa 4/output_files/") File("Tarefa4.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("C:/Users/aluno/Downloads/SistemasDigitais-main/SistemasDigitais-main/output_files/") File("Tarefa4.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

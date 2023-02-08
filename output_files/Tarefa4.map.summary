@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Jan 31 21:53:23 2023
+Analysis & Synthesis Status : Successful - Tue Feb 07 21:45:47 2023
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : Tarefa4
 Top-level Entity Name : main
 Family : Cyclone II
-Total logic elements : 267
-    Total combinational functions : 246
-    Dedicated logic registers : 50
-Total registers : 50
+Total logic elements : 276
+    Total combinational functions : 271
+    Dedicated logic registers : 54
+Total registers : 54
 Total pins : 52
 Total virtual pins : 0
 Total memory bits : 0

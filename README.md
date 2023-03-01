@@ -28,8 +28,7 @@ para o registrador "regS" ou "regH".
 O bloco operativo possui um display de sete segmentos para exibir o valor
 armazenado no registrador "regS". O valor de "regS" é enviado para um módulo de
 exibição que converte o "resultado" em um formato que pode ser exibido no display.
-# Detalhamento do bloco de controle baseada em máquina de estados finitos
-(FSM):
+# Detalhamento do bloco de controle baseada em máquina de estados finitos (FSM):
 O bloco de controle é responsável por coordenar o funcionamento dos
 componentes do bloco operativo, controlando o fluxo de dados e sinais. Ele é
 baseado em máquinas de estados finitas, neste caso ele tem sete estados
